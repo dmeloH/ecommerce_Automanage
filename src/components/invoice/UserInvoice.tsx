@@ -29,7 +29,7 @@ const UserInvoice = () => {
             <div className="col-lg-9 col-md-12 mb-24">
               <div className="gi-vendor-dashboard-card">
                 <PDFContent
-                  title="Invoice"
+                  title="Factura"
                   pageSize="A4"
                   margins="20mm"
                   fileName="user-invoice.pdf"
@@ -47,15 +47,15 @@ const UserInvoice = () => {
                     <div className="col-sm-6">
                       <div className="my-2">
                         <span className="text-sm text-grey-m2 align-middle">
-                          To :{" "}
+                          Para :{" "}
                         </span>
-                        <span className="name">John Deo</span>
+                        <span className="name">Daniela Melo</span>
                       </div>
                       <div className="text-grey-m2">
-                        <div className="my-2">014, Mota Varachha,</div>
-                        <div className="my-2">Delhi, Bharat.</div>
+                        <div className="my-2">25 Abril, 2025</div>
+                        <div className="my-2">Colombia, Boyacá</div>
                         <div className="my-2">
-                          <b className="text-600">Phone : </b>1234567890
+                          <b className="text-600">Telefono : </b>+57 3125316550
                         </div>
                       </div>
                     </div>
@@ -68,16 +68,16 @@ const UserInvoice = () => {
                         </div>
 
                         <div className="my-2">
-                          <span className="text-600 text-90">HSN Code :</span>{" "}
-                          #123456
+                          <span className="text-600 text-90">Código Facturación Electrónica :</span>{" "}
+                         #123456
                         </div>
                         <div className="my-2">
-                          <span className="text-600 text-90">Issue Date :</span>{" "}
-                          Oct 12, 2021-2022
+                          <span className="text-600 text-90">Fecha de asunto :</span>{" "}
+                          Abril 25, 2025
                         </div>
 
                         <div className="my-2">
-                          <span className="text-600 text-90">Invoice No :</span>
+                          <span className="text-600 text-90">Factura N. :</span>
                           6548
                         </div>
                       </div>
@@ -101,16 +101,16 @@ const UserInvoice = () => {
                               <span>225</span>
                             </th>
                             <td>
-                              <span>Crunchy Triangle Chips Snacks</span>
+                              <span>Kit de Pastillas de Freno Delanteras</span>
                             </td>
                             <td>
                               <span>2</span>
                             </td>
                             <td>
-                              <span>$30</span>
+                              <span>$30.000 COP</span>
                             </td>
                             <td>
-                              <span>$320</span>
+                              <span>$60.000 COP</span>
                             </td>
                           </tr>
                           <tr>
@@ -118,16 +118,16 @@ const UserInvoice = () => {
                               <span>548</span>
                             </th>
                             <td>
-                              <span>Dates Value Pack Pouch</span>
+                              <span>Filtro de Aceite Premium</span>
                             </td>
                             <td>
                               <span>5</span>
                             </td>
                             <td>
-                              <span>$40</span>
+                              <span>$40.000 COP</span>
                             </td>
                             <td>
-                              <span>$214</span>
+                              <span>$200.000 COP</span>
                             </td>
                           </tr>
                           <tr>
@@ -135,16 +135,16 @@ const UserInvoice = () => {
                               <span>684</span>
                             </th>
                             <td>
-                              <span>Californian Almonds Value Pack</span>
+                              <span>Batería 12V 60Ah</span>
                             </td>
                             <td>
                               <span>3</span>
                             </td>
                             <td>
-                              <span>$10</span>
+                              <span>$10.000 COP</span>
                             </td>
                             <td>
-                              <span>$548</span>
+                              <span>$30.000 COP</span>
                             </td>
                           </tr>
                           <tr>
@@ -152,16 +152,16 @@ const UserInvoice = () => {
                               <span>987</span>
                             </th>
                             <td>
-                              <span>Banana Chips Snacks & Spices</span>
+                              <span>Amortiguadores Traseros</span>
                             </td>
                             <td>
                               <span>1</span>
                             </td>
                             <td>
-                              <span>$50</span>
+                              <span>$50.000 COP</span>
                             </td>
                             <td>
-                              <span>$200</span>
+                              <span>$50.000 COP</span>
                             </td>
                           </tr>
                         </tbody>
@@ -176,7 +176,7 @@ const UserInvoice = () => {
                               </span>
                             </td>
                             <td className="border-color">
-                              <span>$3520</span>
+                              <span>$340.000 COP</span>
                             </td>
                           </tr>
                           <tr>
@@ -185,18 +185,18 @@ const UserInvoice = () => {
                             </td>
                             <td className="border-color" colSpan={1}>
                               <span>
-                                <strong>Tax (10%)</strong>
+                                <strong>Impuesto (10%)</strong>
                               </span>
                             </td>
                             <td className="border-color">
-                              <span>$352</span>
+                              <span>$34.000 COP</span>
                             </td>
                           </tr>
                           <tr>
                             <td className="border-none m-m15" colSpan={3}>
                               <span className="note-text-color">
-                                Extra note such as company or payment
-                                information...
+                              Fue un placer atenderte. Si necesitas asesoría o más repuestos, aquí estaremos. <br/>   
+                              ¡Buen camino! 🚘
                               </span>
                             </td>
                             <td className="border-color m-m15" colSpan={1}>
@@ -205,7 +205,7 @@ const UserInvoice = () => {
                               </span>
                             </td>
                             <td className="border-color m-m15">
-                              <span>$3872</span>
+                              <span>$374.000 COP</span>
                             </td>
                           </tr>
                         </tfoot>

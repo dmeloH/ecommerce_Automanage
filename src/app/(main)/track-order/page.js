@@ -6,7 +6,7 @@ const page = () => {
         <>
 
 
-            <Breadcrumb title={"Multi Vendor"} />
+            <Breadcrumb title={"Proveedor múltiple"} />
             <TrackOrder />
 
         </>

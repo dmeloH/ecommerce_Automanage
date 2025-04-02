@@ -86,7 +86,7 @@ const FashionFilter = ({ xl = 4, list = "" }) => {
     setCurrentPage(page);
   };
 
-  if (error) return <div>Failed to load products</div>;
+  if (error) return <div>No se pudieron cargar los productos</div>;
 
   const toggleView = (isGrid: any) => {
     setIsGridView(isGrid);

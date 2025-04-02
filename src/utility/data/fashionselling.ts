@@ -11,8 +11,8 @@ interface Fashion {
 const fashionselling: Fashion[] = [
   {
     id: 73,
-    name: "Lipstick",
-    title: "Liquid Matte Lipstick",
+    name: "Lubricantes",
+    title: "Aceite Sintético 5W-30",
     image: process.env.NEXT_PUBLIC_URL + "/assets/img/product-images/54_1.jpg",
     quantity: 1,
     newPrice: 50.00,
@@ -20,8 +20,8 @@ const fashionselling: Fashion[] = [
   },
   {
     id: 1,
-    name: "wallet",
-    title: "Women's wallet Hand Purse",
+    name: "Herramientas",
+    title: "Organizador de Herramientas",
     image: process.env.NEXT_PUBLIC_URL + "/assets/img/product-images/48_1.jpg",
     quantity: 1,
     newPrice: 52.00,
@@ -29,8 +29,8 @@ const fashionselling: Fashion[] = [
   },
   {
     id: 63,
-    name: "perfume",
-    title: "Long lasting perfume",
+    name: "Cuidado",
+    title: "Aromatizante para Auto",
     image: process.env.NEXT_PUBLIC_URL + "/assets/img/product-images/50_1.jpg",
     quantity: 1,
     newPrice: 10.00,
@@ -38,8 +38,8 @@ const fashionselling: Fashion[] = [
   },
   {
     id: 86,
-    name: "Baby Wear",
-    title: "Cotton Clothes Sets for Boys",
+    name: "Accesorios",
+    title: "Kit de Limpieza Básico",
     image: process.env.NEXT_PUBLIC_URL + "/assets/img/product-images/37_1.jpg",
     quantity: 1,
     newPrice: 25.00,
@@ -47,8 +47,8 @@ const fashionselling: Fashion[] = [
   },
   {
     id: 101,
-    name: "shoes",
-    title: "Men's sport shoes blue",
+    name: "Llantas",
+    title: "Neumáticos All-Season",
     image: process.env.NEXT_PUBLIC_URL + "/assets/img/product-images/41_1.jpg",
     quantity: 1,
     newPrice: 20.00,
@@ -56,12 +56,12 @@ const fashionselling: Fashion[] = [
   },
   {
     id: 114,
-    name: "shampoo",
-    title: "anti dandruff shampoo",
+    name: "Limpieza",
+    title: "Shampoo para Carrocería",
     image: process.env.NEXT_PUBLIC_URL + "/assets/img/product-images/51_1.jpg",
     quantity: 1,
     newPrice: 20.00,
     oldPrice: 30.00,
   }
-]
+];
 export default fashionselling;

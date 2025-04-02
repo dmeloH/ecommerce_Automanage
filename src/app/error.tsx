@@ -14,9 +14,9 @@ export default function Error({ error, reset }: ErrorProps) {
 
   return (
     <div>
-      <h2>Something went wrong!</h2>
+      <h2>¡Algo salió mal!</h2>
       <p>{error.message || "An unknown error occurred."}</p>
-      <button onClick={reset}>Try Again</button>
+      <button onClick={reset}>Intentar otra vez</button>
     </div>
   );
 }

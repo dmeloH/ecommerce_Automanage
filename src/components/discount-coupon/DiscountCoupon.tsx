@@ -64,7 +64,7 @@ const DiscountCoupon = ({ onDiscountApplied }) => {
                   type="text"
                   value={couponCode}
                   onChange={(e) => setCouponCode(e.target.value)}
-                  placeholder="Enter coupon code"
+                  placeholder="Código de cupón"
                   className="border p-2"
                 />
                 <button

@@ -6,7 +6,7 @@ const page = () => {
         <>
 
 
-            <Breadcrumb title={"Invoice"} />
+            <Breadcrumb title={"Factura"} />
             <UserInvoice />
 
         </>

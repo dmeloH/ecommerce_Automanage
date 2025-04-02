@@ -22,11 +22,11 @@ interface Footwear {
   
   const fashiontwofootwear: Footwear[] = [
     {
-      title: "Men's sport shoes black",
+      title: "Llantas deportivas negras",
       sale: "",
       image: process.env.NEXT_PUBLIC_URL + "/assets/img/product-images/40_1.jpg",
       imageTwo: process.env.NEXT_PUBLIC_URL + "/assets/img/product-images/40_2.jpg",
-      category: "Sports",
+      category: "Performance",
       newPrice: 100.0,
       oldPrice: 120.0,
       location: "Online",
@@ -39,15 +39,15 @@ interface Footwear {
       color1: 1,
       color2: 2,
       color3: 3,
-      size1: "S",
-      size2: "M"
+      size1: "16''",
+      size2: "17''"
     },
     {
-      title: "Men's sport shoes blue",
+      title: "Llantas deportivas azules",
       sale: "Sale",
       image: process.env.NEXT_PUBLIC_URL + "/assets/img/product-images/41_1.jpg",
       imageTwo: process.env.NEXT_PUBLIC_URL + "/assets/img/product-images/41_1.jpg",
-      category: "Sports",
+      category: "Performance",
       newPrice: 150.0,
       oldPrice: 170.0,
       location: "Online",
@@ -64,11 +64,11 @@ interface Footwear {
       size2: ""
     },
     {
-      title: "Men's Formal Shoes",
+      title: "Neumáticos de alto rendimiento",
       sale: "Sale",
       image: process.env.NEXT_PUBLIC_URL + "/assets/img/product-images/42_1.jpg",
       imageTwo: process.env.NEXT_PUBLIC_URL + "/assets/img/product-images/42_2.jpg",
-      category: "party wear",
+      category: "Gama Alta",
       newPrice: 110.0,
       oldPrice: 120.0,
       location: "Online",
@@ -81,15 +81,15 @@ interface Footwear {
       color1: 1,
       color2: 2,
       color3: 3,
-      size1: "S",
-      size2: "M"
+      size1: "205/55",
+      size2: "225/45"
     },
     {
-      title: "women's Formal Shoes",
+      title: "Neumáticos de invierno",
       sale: "New",
       image: process.env.NEXT_PUBLIC_URL + "/assets/img/product-images/43_1.jpg",
       imageTwo: process.env.NEXT_PUBLIC_URL + "/assets/img/product-images/43_1.jpg",
-      category: "party wear",
+      category: "Invierno",
       newPrice: 200.0,
       oldPrice: 240.0,
       location: "Online",
@@ -106,7 +106,7 @@ interface Footwear {
       size2: ""
     },
     {
-      title: "Men's sport shoes",
+      title: "Juego de ruedas deportivas",
       sale: "New",
       image: process.env.NEXT_PUBLIC_URL + "/assets/img/product-images/44_1.jpg",
       imageTwo: process.env.NEXT_PUBLIC_URL + "/assets/img/product-images/44_2.jpg",
@@ -127,11 +127,11 @@ interface Footwear {
       size2: ""
     },
     {
-      title: "Women's casual shoes",
+      title: "Neumáticos todo terreno",
       sale: "Sale",
       image: process.env.NEXT_PUBLIC_URL + "/assets/img/product-images/45_1.jpg",
       imageTwo: process.env.NEXT_PUBLIC_URL + "/assets/img/product-images/45_1.jpg",
-      category: "Sports",
+      category: "Off-Road",
       newPrice: 500.0,
       oldPrice: 600.0,
       location: "Online",
@@ -144,15 +144,15 @@ interface Footwear {
       color1: 1,
       color2: 2,
       color3: 3,
-      size1: "S",
-      size2: "M"
+      size1: "265/70",
+      size2: "285/75"
     },
     {
-      title: "Women's sport shoes",
+      title: "Neumáticos urbanos",
       sale: "Sale",
       image: process.env.NEXT_PUBLIC_URL + "/assets/img/product-images/46_1.jpg",
       imageTwo: process.env.NEXT_PUBLIC_URL + "/assets/img/product-images/46_1.jpg",
-      category: "Casual",
+      category: "Ciudad",
       newPrice: 110.0,
       oldPrice: 120.0,
       location: "Online",
@@ -165,16 +165,15 @@ interface Footwear {
       color1: 1,
       color2: 2,
       color3: 3,
-      size1: "S",
-      size2: "M"
+      size1: "185/65",
+      size2: "195/55"
     },
-  
     {
-      title: "Baby printed shoes",
+      title: "Ruedas compactas",
       sale: "",
       image: process.env.NEXT_PUBLIC_URL + "/assets/img/product-images/47_1.jpg",
       imageTwo: process.env.NEXT_PUBLIC_URL + "/assets/img/product-images/47_1.jpg",
-      category: "Baby shoes",
+      category: "Compactos",
       newPrice: 150.0,
       oldPrice: 170.0,
       location: "Online",
@@ -191,11 +190,11 @@ interface Footwear {
       size2: ""
     },
     {
-      title: "Men's sport shoes blue",
+      title: "Llantas deportivas azules",
       sale: "Sale",
       image: process.env.NEXT_PUBLIC_URL + "/assets/img/product-images/41_1.jpg",
       imageTwo: process.env.NEXT_PUBLIC_URL + "/assets/img/product-images/41_1.jpg",
-      category: "Sports",
+      category: "Performance",
       newPrice: 150.0,
       oldPrice: 170.0,
       location: "Online",
@@ -212,11 +211,11 @@ interface Footwear {
       size2: ""
     },
     {
-      title: "Men's Formal Shoes",
+      title: "Neumáticos de alto rendimiento",
       sale: "Sale",
       image: process.env.NEXT_PUBLIC_URL + "/assets/img/product-images/42_1.jpg",
       imageTwo: process.env.NEXT_PUBLIC_URL + "/assets/img/product-images/42_2.jpg",
-      category: "party wear",
+      category: "Gama Alta",
       newPrice: 110.0,
       oldPrice: 120.0,
       location: "Online",
@@ -229,10 +228,10 @@ interface Footwear {
       color1: 1,
       color2: 2,
       color3: 3,
-      size1: "S",
-      size2: "M"
-    },
+      size1: "205/55",
+      size2: "225/45"
+    }
   ];
   
-  export default fashiontwofootwear;
+export default fashiontwofootwear;
   

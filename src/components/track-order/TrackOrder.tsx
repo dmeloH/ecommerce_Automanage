@@ -12,7 +12,7 @@ const TrackOrder = () => {
     return (
       <div className="container">
       <p>
-        Please <a href="/login">login</a> or <a href="/register">register</a> to view this page.
+        Porfavor <a href="/login">Inicia sesion</a> o <a href="/register">registrate</a> para ver esta pagina
       </p>
     </div>
     );
@@ -23,9 +23,9 @@ const TrackOrder = () => {
         <div className="container">
           <div className="section-title-2">
             <h2 className="gi-title">
-              Track<span> Order</span>
+            Seguimiento <span> del pedido </span>
             </h2>
-            <p>We delivering happiness and needs, Faster than you can think.</p>
+            <p>Del carrito a tus manos, en un abrir y cerrar de ojos. 👀</p>
           </div>
           <div className="row">
             <div className="container">
@@ -34,20 +34,21 @@ const TrackOrder = () => {
                 <div className="row">
                   <div className="col-md-4 m-b-767">
                     <div className="gi-track-card">
-                      <span className="gi-track-title">order</span>
+                      <span className="gi-track-title">Orden</span>
                       <span>#6152</span>
                     </div>
                   </div>
                   <div className="col-md-4 m-b-767">
                     <div className="gi-track-card">
-                      <span className="gi-track-title">Grasshoppers</span>
+                      <span className="gi-track-title">En ruta de entrega</span>
                       <span>v534hb</span>
                     </div>
                   </div>
                   <div className="col-md-4 m-b-767">
                     <div className="gi-track-card">
-                      <span className="gi-track-title">Expected date</span>
-                      <span>June 17, 2019</span>
+                      <span className="gi-track-title">Fecha esperada de entrega</span>
+                      <span>Abril / 25 / 2025 - Mayo / 2 / 2025 
+                      </span>
                     </div>
                   </div>
                 </div>
@@ -61,7 +62,7 @@ const TrackOrder = () => {
                       <span className="gi-step-icon">
                         <i className="fi fi-rs-comment-check"></i>
                       </span>
-                      Order<br></br> confirmed
+                      Pedido <br></br> confirmado
                     </div>
 
                     <div className="gi-step gi-step-completed">
@@ -71,25 +72,25 @@ const TrackOrder = () => {
                       <span className="gi-step-icon">
                         <i className="fi fi-rs-settings"></i>
                       </span>
-                      Processing<br></br> order
+                      Orden de <br></br> procesamiento
                     </div>
                     <div className="gi-step gi-step-active">
                       <span className="gi-step-icon">
                         <i className="fi fi-rs-gift"></i>
                       </span>
-                      Quality<br></br> check
+                      control de <br></br> calidad
                     </div>
                     <div className="gi-step">
                       <span className="gi-step-icon">
                         <i className="fi fi-rs-truck-side"></i>
                       </span>
-                      Product<br></br> dispatched
+                      Producto <br></br> enviado
                     </div>
                     <div className="gi-step">
                       <span className="gi-step-icon">
                         <i className="fi fi-rs-home"></i>
                       </span>
-                      Product<br></br> delivered
+                      Producto <br></br> entregado
                     </div>
                   </div>
                   <div className="gi-steps-header">

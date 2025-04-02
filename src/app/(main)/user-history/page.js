@@ -8,7 +8,7 @@ const page = () => {
         <>
 
 
-            <Breadcrumb title={"User History"} />
+            <Breadcrumb title={"Historial"} />
             <UserHistory />
 
         </>

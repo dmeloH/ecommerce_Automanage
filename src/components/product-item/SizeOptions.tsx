@@ -16,189 +16,66 @@ const SizeOptions: React.FC<SizeOptionsProps> = ({ categories, subCategory }) =>
 
     const Categories: Record<string, Record<string, SizeOption[]>> = useMemo(() => ({
         clothes: {
-            "men's wear": [
-                { value: 'S', tooltip: 'Small' },
-                { value: 'M', tooltip: 'Medium' },
-                { value: 'L', tooltip: 'Large' },
-                { value: 'XL', tooltip: 'Extra Large' },
+            "Sistema de Combustible": [
+                { value: '30 PSI', tooltip: 'Baja presión' },
+                { value: '45 PSI', tooltip: 'Estándar' },
+                { value: '60 PSI', tooltip: 'Alto rendimiento' },
+                { value: '80 PSI', tooltip: 'Competencia' }
             ],
-            "women's wear": [
-                { value: 'S', tooltip: 'Small' },
-                { value: 'M', tooltip: 'Medium' },
-                { value: 'L', tooltip: 'Large' },
-                { value: 'XL', tooltip: 'Extra Large' },
+            "Neumáticos": [
+                { value: '32 PSI', tooltip: 'Ciudad' },
+                { value: '35 PSI', tooltip: 'Carretera' },
+                { value: '40 PSI', tooltip: 'Carga' },
+                { value: '50 PSI', tooltip: 'Industrial' }
             ],
-            "baby wear": [
-                { value: 'S', tooltip: 'Small' },
-                { value: 'M', tooltip: 'Medium' },
-                { value: 'L', tooltip: 'Large' },
-                { value: 'XL', tooltip: 'Extra Large' },
-            ],
-            "winter wear": [
-                { value: 'S', tooltip: 'Small' },
-                { value: 'M', tooltip: 'Medium' },
-                { value: 'L', tooltip: 'Large' },
-                { value: 'XL', tooltip: 'Extra Large' },
-            ],
-            "unisex": [
-                { value: 'S', tooltip: 'Small' },
-                { value: 'M', tooltip: 'Medium' },
-                { value: 'L', tooltip: 'Large' },
-                { value: 'XL', tooltip: 'Extra Large' },
-            ],
-            "Fashion": [
-                { value: 'S', tooltip: 'Small' },
-                { value: 'M', tooltip: 'Medium' },
-                { value: 'L', tooltip: 'Large' },
-                { value: 'XL', tooltip: 'Extra Large' },
-            ],
+            "Sistema de Aire Acondicionado": [
+                { value: '25 PSI', tooltip: 'Baja' },
+                { value: '40 PSI', tooltip: 'Media' },
+                { value: '60 PSI', tooltip: 'Alta' },
+                { value: '100 PSI', tooltip: 'Máxima' }
+            ]
         },
         footwear: {
-            "Sports": [
-                { value: '6', tooltip: 'Small' },
-                { value: '8', tooltip: 'Medium' },
-                { value: '10', tooltip: 'Large' },
-                { value: '12', tooltip: 'Extra Large' },
+            "Suspensión Neumática": [
+                { value: '50 PSI', tooltip: 'Confort' },
+                { value: '75 PSI', tooltip: 'Mixto' },
+                { value: '100 PSI', tooltip: 'Deportivo' },
+                { value: '150 PSI', tooltip: 'Competencia' }
             ],
-            "party wear": [
-                { value: '6', tooltip: 'Small' },
-                { value: '8', tooltip: 'Medium' },
-                { value: '10', tooltip: 'Large' },
-                { value: '12', tooltip: 'Extra Large' },
-            ],
-            "Casual": [
-                { value: '6', tooltip: 'Small' },
-                { value: '8', tooltip: 'Medium' },
-                { value: '10', tooltip: 'Large' },
-                { value: '12', tooltip: 'Extra Large' },
-            ],
-            "Baby shoes": [
-                { value: '6', tooltip: 'Small' },
-                { value: '8', tooltip: 'Medium' },
-                { value: '10', tooltip: 'Large' },
-                { value: '12', tooltip: 'Extra Large' },
-            ],
-            "Unisex": [
-                { value: '6', tooltip: 'Small' },
-                { value: '8', tooltip: 'Medium' },
-                { value: '10', tooltip: 'Large' },
-                { value: '12', tooltip: 'Extra Large' },
-            ],
+            "Frenos de Aire": [
+                { value: '90 PSI', tooltip: 'Mínimo' },
+                { value: '110 PSI', tooltip: 'Estándar' },
+                { value: '130 PSI', tooltip: 'Alto rendimiento' },
+                { value: '150 PSI', tooltip: 'Pesado' }
+            ]
         },
         vegetables: {
-            "Vegetables": [
-                { value: '250g', tooltip: 'Small' },
-                { value: '500g', tooltip: 'Medium' },
-                { value: '1kg', tooltip: 'Large' },
-                { value: '2kg', tooltip: 'Extra Large' }
+            "Sistema de Turbo": [
+                { value: '5 PSI', tooltip: 'Bajo boost' },
+                { value: '10 PSI', tooltip: 'Street' },
+                { value: '20 PSI', tooltip: 'Performance' },
+                { value: '30+ PSI', tooltip: 'Racing' }
             ],
-            "Tuber root": [
-                { value: '250g', tooltip: 'Small' },
-                { value: '500g', tooltip: 'Medium' },
-                { value: '1kg', tooltip: 'Large' },
-                { value: '2kg', tooltip: 'Extra Large' }
-            ],
-            "Potato": [
-                { value: '250g', tooltip: 'Small' },
-                { value: '500g', tooltip: 'Medium' },
-                { value: '1kg', tooltip: 'Large' },
-                { value: '2kg', tooltip: 'Extra Large' }
-            ],
-            "Eggs": [
-                { value: '250g', tooltip: 'Small' },
-                { value: '500g', tooltip: 'Medium' },
-                { value: '1kg', tooltip: 'Large' },
-                { value: '2kg', tooltip: 'Extra Large' }
-            ],
-            "Dried Fruits": [
-                { value: '250g', tooltip: 'Small' },
-                { value: '500g', tooltip: 'Medium' },
-                { value: '1kg', tooltip: 'Large' },
-                { value: '2kg', tooltip: 'Extra Large' }
-            ],
-            "Fresh Fruit": [
-                { value: '250g', tooltip: 'Small' },
-                { value: '500g', tooltip: 'Medium' },
-                { value: '1kg', tooltip: 'Large' },
-                { value: '2kg', tooltip: 'Extra Large' }
-            ], "Foods": [
-                { value: '250g', tooltip: 'Small' },
-                { value: '500g', tooltip: 'Medium' },
-                { value: '1kg', tooltip: 'Large' },
-                { value: '2kg', tooltip: 'Extra Large' }
-            ], "Snacks": [
-                { value: '250g', tooltip: 'Small' },
-                { value: '500g', tooltip: 'Medium' },
-                { value: '1kg', tooltip: 'Large' },
-                { value: '2kg', tooltip: 'Extra Large' }
-            ], "chips & fries": [
-                { value: '250g', tooltip: 'Small' },
-                { value: '500g', tooltip: 'Medium' },
-                { value: '1kg', tooltip: 'Large' },
-                { value: '2kg', tooltip: 'Extra Large' }
-            ], "Mix Snack": [
-                { value: '250g', tooltip: 'Small' },
-                { value: '500g', tooltip: 'Medium' },
-                { value: '1kg', tooltip: 'Large' },
-                { value: '2kg', tooltip: 'Extra Large' }
-            ],
-            "Cookies": [
-                { value: '250g', tooltip: 'Small' },
-                { value: '500g', tooltip: 'Medium' },
-                { value: '1kg', tooltip: 'Large' },
-                { value: '2kg', tooltip: 'Extra Large' }
-            ],
-
+            "Refrigeración": [
+                { value: '15 PSI', tooltip: 'Tapa estándar' },
+                { value: '20 PSI', tooltip: 'Refuerzo' },
+                { value: '25 PSI', tooltip: 'Alta presión' },
+                { value: '30 PSI', tooltip: 'Extremo' }
+            ]
         },
         accessorise: {
-            "Belt": [
-                { value: '1 Pcs', tooltip: 'Small' },
-                { value: '2 Pcs', tooltip: 'Medium' },
-                { value: '3 Pcs', tooltip: 'Large' },
-                { value: '4 Pcs', tooltip: 'Extra Large' }
+            "Compresores": [
+                { value: '100 PSI', tooltip: 'Básico' },
+                { value: '150 PSI', tooltip: 'Profesional' },
+                { value: '200 PSI', tooltip: 'Industrial' },
+                { value: '300 PSI', tooltip: 'Pesado' }
             ],
-            "wallet": [
-                { value: '1 Pcs', tooltip: 'Small' },
-                { value: '2 Pcs', tooltip: 'Medium' },
-                { value: '3 Pcs', tooltip: 'Large' },
-                { value: '4 Pcs', tooltip: 'Extra Large' }
-            ],
-            "perfume": [
-                { value: '1 Pack', tooltip: 'Small' },
-                { value: '2 Pack', tooltip: 'Medium' },
-                { value: '3 Pack', tooltip: 'Large' },
-                { value: '4 Pack', tooltip: 'Extra Large' }
-            ],
-            "shampoo": [
-                { value: '1 Pack', tooltip: 'Small' },
-                { value: '2 Pack', tooltip: 'Medium' },
-                { value: '3 Pack', tooltip: 'Large' },
-                { value: '4 Pack', tooltip: 'Extra Large' }
-            ],
-            "Body Lotion": [
-                { value: '1 Pack', tooltip: 'Small' },
-                { value: '2 Pack', tooltip: 'Medium' },
-                { value: '3 Pack', tooltip: 'Large' },
-                { value: '4 Pack', tooltip: 'Extra Large' }
-            ],
-            "jewellery": [
-                { value: '1 Pcs', tooltip: 'Small' },
-                { value: '2 Pcs', tooltip: 'Medium' },
-                { value: '3 Pcs', tooltip: 'Large' },
-                { value: '4 Pcs', tooltip: 'Extra Large' }
-            ],
-            "Lipstick": [
-                { value: '1 Pcs', tooltip: 'Small' },
-                { value: '2 Pcs', tooltip: 'Medium' },
-                { value: '3 Pcs', tooltip: 'Large' },
-                { value: '4 Pcs', tooltip: 'Extra Large' }
-            ],
-            "makeup kit": [
-                { value: '1 Pack', tooltip: 'Small' },
-                { value: '2 Pack', tooltip: 'Medium' },
-                { value: '3 Pack', tooltip: 'Large' },
-                { value: '4 Pack', tooltip: 'Extra Large' }
-            ],
+            "Herramientas Neumáticas": [
+                { value: '90 PSI', tooltip: 'Ligero' },
+                { value: '120 PSI', tooltip: 'Estándar' },
+                { value: '150 PSI', tooltip: 'Pesado' },
+                { value: '200 PSI', tooltip: 'Industrial' }
+            ]
         }
     }), [])
 

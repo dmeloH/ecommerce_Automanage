@@ -323,7 +323,7 @@ const CheckOut = ({
 
   const { data, error } = useSWR("/api/deal", fetcher, { onSuccess, onError });
 
-  if (error) return <div>Failed to load products</div>;
+  if (error) return <div>No se pudieron cargar los productos</div>;
   if (!data)
     return (
       <div>
@@ -474,9 +474,9 @@ const CheckOut = ({
 
   return (
     <>
-      <Breadcrumb title={"Checkout"} />
+      <Breadcrumb title={"Verificación"} />
       <section className="gi-checkout-section padding-tb-40">
-        <h2 className="d-none">Checkout Page</h2>
+        <h2 className="d-none">Página de pago</h2>
         <div className="container">
           {cartItems.length === 0 ? (
             <div
@@ -488,8 +488,7 @@ const CheckOut = ({
               className="gi-pro-content cart-pro-title"
             >
               {" "}
-              Your cart is currently empty. Please add items to your cart to
-              proceed.
+              Su carrito está vacío. Añada artículos al carrito para continuar.
             </div>
           ) : (
             <Row>
@@ -499,7 +498,7 @@ const CheckOut = ({
                   {/* <!-- Sidebar Summary Block --> */}
                   <div className="gi-sidebar-block">
                     <div className="gi-sb-title">
-                      <h3 className="gi-sidebar-title">Summary</h3>
+                      <h3 className="gi-sidebar-title">Resumen</h3>
                     </div>
                     <div className="gi-sb-block-content">
                       <div className="gi-checkout-summary">
@@ -510,7 +509,7 @@ const CheckOut = ({
                           </span>
                         </div>
                         <div>
-                          <span className="text-left">Delivery Charges</span>
+                          <span className="text-left">Gastos de envío</span>
                           <span className="text-right">${vat.toFixed(2)}</span>
                         </div>
                         <div>
@@ -538,12 +537,12 @@ const CheckOut = ({
                               type="submit"
                               name="subscribe"
                             >
-                              Apply
+                              Aplicar
                             </button>
                           </form>
                         </div>
                         <div className="gi-checkout-summary-total">
-                          <span className="text-left">Total Amount</span>
+                          <span className="text-left">Monto total</span>
                           <span className="text-right">
                             ${total.toFixed(2)}
                           </span>
@@ -583,10 +582,10 @@ const CheckOut = ({
                                 </div>
                                 <span className="gi-price">
                                   <span className="old-price">
-                                    ${item.oldPrice}.00{" "}
+                                    ${item.oldPrice}.000{" "}
                                   </span>
                                   <span className="new-price">
-                                    ${item.newPrice}.00
+                                    ${item.newPrice}.000
                                   </span>
                                 </span>
                               </div>
@@ -602,19 +601,18 @@ const CheckOut = ({
                   {/* <!-- Sidebar Summary Block --> */}
                   <div className="gi-sidebar-block">
                     <div className="gi-sb-title">
-                      <h3 className="gi-sidebar-title">Delivery Method</h3>
+                      <h3 className="gi-sidebar-title">Método de entrega</h3>
                     </div>
                     <div className="gi-sb-block-content">
                       <div className="gi-checkout-del">
                         <div className="gi-del-desc">
-                          Please select the preferred shipping method to use on
-                          this order.
+                        Seleccione el método de envío que prefiera para este pedido.
                         </div>
                         <form action="#">
                           <span className="gi-del-option">
                             <span>
                               <span className="gi-del-opt-head">
-                                Free Shipping
+                              Envío gratis
                               </span>
                               <input
                                 type="radio"
@@ -624,10 +622,10 @@ const CheckOut = ({
                                 checked={selectedMethod === "free"}
                                 onChange={handleDeliveryChange}
                               />
-                              <label htmlFor="del1">Rate - $0.00</label>
+                              <label htmlFor="del1">Tasa - $0.00</label>
                             </span>
                             <span>
-                              <span className="gi-del-opt-head">Flat Rate</span>
+                              <span className="gi-del-opt-head">Tarifa Plana</span>
                               <input
                                 type="radio"
                                 id="del2"
@@ -636,16 +634,16 @@ const CheckOut = ({
                                 checked={selectedMethod === "flat"}
                                 onChange={handleDeliveryChange}
                               />
-                              <label htmlFor="del2">Rate - $5.00</label>
+                              <label htmlFor="del2">Tasa - $5.000</label>
                             </span>
                           </span>
                           <span className="gi-del-comment">
                             <span className="gi-del-opt-head">
-                              Add Comments About Your Order
+                            Añadir comentarios sobre su pedido
                             </span>
                             <textarea
                               name="your-comment"
-                              placeholder="Comments"
+                              placeholder="Comentarios"
                             ></textarea>
                           </span>
                         </form>
@@ -658,13 +656,12 @@ const CheckOut = ({
                   {/* <!-- Sidebar Payment Block --> */}
                   <div className="gi-sidebar-block">
                     <div className="gi-sb-title">
-                      <h3 className="gi-sidebar-title">Payment Method</h3>
+                      <h3 className="gi-sidebar-title">Método de pago</h3>
                     </div>
                     <div className="gi-sb-block-content">
                       <div className="gi-checkout-pay">
                         <div className="gi-pay-desc">
-                          Please select the preferred payment method to use on
-                          this order.
+                        Seleccione el método de pago que prefiera para este pedido.
                         </div>
                         <form action="#">
                           <span className="gi-pay-option">
@@ -677,16 +674,16 @@ const CheckOut = ({
                                 value=""
                                 checked
                               />
-                              <label htmlFor="pay1">Cash On Delivery</label>
+                              <label htmlFor="pay1">Contra reembolso</label>
                             </span>
                           </span>
                           <span className="gi-pay-commemt">
                             <span className="gi-pay-opt-head">
-                              Add Comments About Your Order
+                            Añadir comentarios sobre su pedido
                             </span>
                             <textarea
                               name="your-commemt"
-                              placeholder="Comments"
+                              placeholder="Comentarios"
                             ></textarea>
                           </span>
                           <span className="gi-pay-agree">
@@ -701,8 +698,8 @@ const CheckOut = ({
                               value=""
                             />
                             <a href="#">
-                              I have read and agree to the{" "}
-                              <span>Terms & Conditions.</span>
+                            He leído y acepto los términos y condiciones{" "}
+                              <span>Términos y condiciones.</span>
                             </a>
                             <span className="checked"></span>
                           </span>
@@ -716,7 +713,7 @@ const CheckOut = ({
                   {/* <!-- Sidebar Payment Block --> */}
                   <div className="gi-sidebar-block">
                     <div className="gi-sb-title">
-                      <h3 className="gi-sidebar-title">Payment Method</h3>
+                      <h3 className="gi-sidebar-title">Método de pago</h3>
                     </div>
                     <div className="gi-sb-block-content">
                       <div className="gi-check-pay-img-inner">
@@ -743,10 +740,10 @@ const CheckOut = ({
                       <>
                         <div className="gi-checkout-wrap m-b-40">
                           <div className="gi-checkout-block">
-                            <h3 className="gi-checkout-title">New Customer</h3>
+                            <h3 className="gi-checkout-title">Nuevo cliente</h3>
                             <div className="gi-check-block-content">
                               <div className="gi-check-subtitle">
-                                Checkout Options
+                              Opciones de pago
                               </div>
                               <form action="#">
                                 <span className="gi-new-option">
@@ -760,7 +757,7 @@ const CheckOut = ({
                                       onChange={handleCheckOutChange}
                                     />
                                     <label htmlFor="account2">
-                                      Guest Account
+                                    Cuenta de invitado
                                     </label>
                                   </span>
                                   <span>
@@ -773,7 +770,7 @@ const CheckOut = ({
                                       onChange={handleCheckOutChange}
                                     />
                                     <label htmlFor="account1">
-                                      Register Account
+                                    Registrar cuenta
                                     </label>
                                   </span>
                                   <span>
@@ -786,7 +783,7 @@ const CheckOut = ({
                                       onChange={handleCheckOutChange}
                                     />
                                     <label htmlFor="account3">
-                                      Login Account
+                                    Iniciar sesión cuenta
                                     </label>
                                   </span>
                                 </span>
@@ -806,7 +803,7 @@ const CheckOut = ({
                                       onClick={handleContinueBtn}
                                       className="gi-btn-2"
                                     >
-                                      Continue
+                                      Continuar
                                     </a>
                                   </div>
                                 </>
@@ -840,7 +837,7 @@ const CheckOut = ({
                                                   required
                                                 />
                                                 <Form.Control.Feedback type="invalid">
-                                                  Please Enter correct username.
+                                                Por favor ingrese un nombre de usuario correcto.
                                                 </Form.Control.Feedback>
                                               </Form.Group>
                                             </span>
@@ -862,8 +859,7 @@ const CheckOut = ({
                                                   }
                                                 />
                                                 <Form.Control.Feedback type="invalid">
-                                                  Please Enter 6-12 digit
-                                                  number.
+                                                Por favor, introduzca un número de 6 a 12 dígitos.
                                                 </Form.Control.Feedback>
                                               </Form.Group>
                                             </span>
@@ -872,13 +868,13 @@ const CheckOut = ({
                                                 className="gi-btn-2"
                                                 type="submit"
                                               >
-                                                Continue
+                                                Continuar
                                               </button>
                                               <a
                                                 className="gi-check-login-fp"
                                                 href="#"
                                               >
-                                                Forgot Password?
+                                                ¿Has olvidado tu contraseña?
                                               </a>
                                             </span>
                                           </Form>
@@ -897,10 +893,10 @@ const CheckOut = ({
                     {billingVisible && (
                       <div className="gi-checkout-wrap m-b-30 padding-bottom-3">
                         <div className="gi-checkout-block gi-check-bill">
-                          <h3 className="gi-checkout-title">Billing Details</h3>
+                          <h3 className="gi-checkout-title">Detalles de facturación</h3>
                           <div className="gi-bl-block-content">
                             <div className="gi-check-subtitle">
-                              Checkout Options
+                            Opciones de pago
                             </div>
                             <span className="gi-bill-option">
                               <span>
@@ -914,7 +910,7 @@ const CheckOut = ({
                                   disabled={addressVisible.length === 0}
                                 />
                                 <label htmlFor="bill1">
-                                  I want to use an existing address
+                                Quiero usar una dirección existente
                                 </label>
                               </span>
                               <span>
@@ -930,7 +926,7 @@ const CheckOut = ({
                                   onChange={handleBillingChange}
                                 />
                                 <label htmlFor="bill2">
-                                  I want to use new address
+                                Quiero usar una nueva dirección
                                 </label>
                               </span>
                             </span>
@@ -948,18 +944,18 @@ const CheckOut = ({
                                     style={{ marginTop: "10px" }}
                                     className="gi-bill-wrap gi-bill-half"
                                   >
-                                    <label>First Name*</label>
+                                    <label>Nombre*</label>
                                     <Form.Group>
                                       <Form.Control
                                         type="text"
                                         name="firstName"
-                                        placeholder="Enter your first name"
+                                        placeholder="Introduce tu nombre"
                                         required
                                         value={formData.firstName}
                                         onChange={handleInputChange}
                                       />
                                       <Form.Control.Feedback type="invalid">
-                                        Please Enter First Name.
+                                      Por favor, introduzca su nombre.
                                       </Form.Control.Feedback>
                                     </Form.Group>
                                   </span>
@@ -967,18 +963,18 @@ const CheckOut = ({
                                     style={{ marginTop: "10px" }}
                                     className="gi-bill-wrap gi-bill-half"
                                   >
-                                    <label>Last Name*</label>
+                                    <label>Apellido*</label>
                                     <Form.Group>
                                       <Form.Control
                                         type="text"
                                         name="lastName"
-                                        placeholder="Enter your last name"
+                                        placeholder="Introduce tu apellido"
                                         required
                                         value={formData.lastName}
                                         onChange={handleInputChange}
                                       />
                                       <Form.Control.Feedback type="invalid">
-                                        Please Enter Last Name.
+                                        Por favor, introduzca su apellido.
                                       </Form.Control.Feedback>
                                     </Form.Group>
                                   </span>
@@ -986,18 +982,18 @@ const CheckOut = ({
                                     style={{ marginTop: "10px" }}
                                     className="gi-bill-wrap"
                                   >
-                                    <label>Address</label>
+                                    <label>Dirección</label>
                                     <Form.Group>
                                       <Form.Control
                                         type="text"
                                         name="address"
-                                        placeholder="Address Line 1"
+                                        placeholder="Dirección Línea 1"
                                         value={formData.address}
                                         onChange={handleInputChange}
                                         required
                                       />
                                       <Form.Control.Feedback type="invalid">
-                                        Please Enter Address.
+                                      Por favor ingrese la dirección.
                                       </Form.Control.Feedback>
                                     </Form.Group>
                                   </span>
@@ -1005,7 +1001,7 @@ const CheckOut = ({
                                     style={{ marginTop: "10px" }}
                                     className="gi-bill-wrap gi-bill-half"
                                   >
-                                    <label>Country</label>
+                                    <label>País</label>
                                     <span className="gi-bl-select-inner">
                                       <Form.Select
                                         size="sm"
@@ -1021,7 +1017,7 @@ const CheckOut = ({
                                         required
                                       >
                                         <option value="" disabled>
-                                          Country
+                                        País
                                         </option>
                                         {filteredCountryData.map(
                                           (country: any, index: number) => (
@@ -1040,7 +1036,7 @@ const CheckOut = ({
                                     style={{ marginTop: "10px" }}
                                     className="gi-bill-wrap gi-bill-half"
                                   >
-                                    <label>Region State</label>
+                                    <label>Región Estado</label>
                                     <Form.Group className="gi-bl-select-inner">
                                       <Form.Select
                                         size="sm"
@@ -1053,10 +1049,10 @@ const CheckOut = ({
                                         required
                                       >
                                         <option value="" disabled>
-                                          Region/State
+                                        Región/Estado
                                         </option>
                                         {loadingStates ? (
-                                          <option disabled>Loading...</option>
+                                          <option disabled>Cargando...</option>
                                         ) : (
                                           filteredStateData.map(
                                             (state: any, index) => (
@@ -1076,7 +1072,7 @@ const CheckOut = ({
                                     style={{ marginTop: "10px" }}
                                     className="gi-bill-wrap gi-bill-half"
                                   >
-                                    <label>City *</label>
+                                    <label>Ciudad*</label>
                                     <Form.Group className="gi-bl-select-inner">
                                       <Form.Select
                                         size="sm"
@@ -1089,10 +1085,10 @@ const CheckOut = ({
                                         required
                                       >
                                         <option value="" disabled>
-                                          City
+                                        Ciudad
                                         </option>
                                         {loadingCities ? (
-                                          <option disabled>Loading...</option>
+                                          <option disabled>Cargando...</option>
                                         ) : (
                                           filteredCityData.map(
                                             (city: any, index) => (
@@ -1112,25 +1108,25 @@ const CheckOut = ({
                                     style={{ marginTop: "10px" }}
                                     className="gi-bill-wrap gi-bill-half"
                                   >
-                                    <label>Post Code</label>
+                                    <label>Código postal</label>
                                     <Form.Group>
                                       <Form.Control
                                         type="text"
                                         name="postalCode"
                                         pattern="^\d{5,6}$"
-                                        placeholder="Post Code"
+                                        placeholder="Codigo postal"
                                         value={formData.postalCode}
                                         onChange={handleInputChange}
                                         required
                                       />
                                       <Form.Control.Feedback type="invalid">
-                                        Please Enter 05-06 digit number.
+                                      Ingrese un número de 05-06 dígitos.
                                       </Form.Control.Feedback>
                                     </Form.Group>
                                   </span>
                                   <span className="gi-check-order-btn">
                                     <button type="submit" className="gi-btn-2">
-                                      Add
+                                      Guardar
                                     </button>
                                   </span>
                                 </Form>
@@ -1143,7 +1139,7 @@ const CheckOut = ({
                                     <div className="gi-sidebar-block">
                                       <div className="gi-sb-title">
                                         <h3 className="gi-sidebar-title">
-                                          Address
+                                          Dirección
                                         </h3>
                                       </div>
                                       <div className="gi-sb-block-content">
@@ -1153,8 +1149,7 @@ const CheckOut = ({
                                               style={{ marginBottom: "15px" }}
                                               className="gi-pay-desc"
                                             >
-                                              Please select the preferred
-                                              Address to use on this order.
+                                              Seleccione la dirección que prefiera para este pedido.
                                             </div>
                                           )}
                                         </div>
@@ -1212,7 +1207,7 @@ const CheckOut = ({
                                                     <ul>
                                                       <li>
                                                         <strong className="gi-check-subtitle">
-                                                          Name :
+                                                          Nombre :
                                                         </strong>{" "}
                                                         <span
                                                           style={{
@@ -1225,7 +1220,7 @@ const CheckOut = ({
                                                       </li>
                                                       <li>
                                                         <strong className="gi-check-subtitle">
-                                                          Address :
+                                                          Dirección :
                                                         </strong>{" "}
                                                         <span
                                                           style={{
@@ -1237,7 +1232,7 @@ const CheckOut = ({
                                                       </li>
                                                       <li>
                                                         <strong className="gi-check-subtitle">
-                                                          PostalCode :
+                                                          Codigo portal :
                                                         </strong>{" "}
                                                         <span
                                                           style={{
@@ -1260,7 +1255,7 @@ const CheckOut = ({
                                                     <ul>
                                                       <li>
                                                         <strong className="gi-check-subtitle">
-                                                          Country :
+                                                        País :
                                                         </strong>{" "}
                                                         <span
                                                           style={{
@@ -1272,7 +1267,7 @@ const CheckOut = ({
                                                       </li>
                                                       <li>
                                                         <strong className="gi-check-subtitle">
-                                                          State :
+                                                        Estado :
                                                         </strong>{" "}
                                                         <span
                                                           style={{
@@ -1284,7 +1279,7 @@ const CheckOut = ({
                                                       </li>
                                                       <li>
                                                         <strong className="gi-check-subtitle">
-                                                          City :
+                                                          Ciudad :
                                                         </strong>{" "}
                                                         <span
                                                           style={{
@@ -1333,7 +1328,7 @@ const CheckOut = ({
                       (!btnVisible === billingVisible && (
                         <span className="gi-check-order-btn">
                           <a onClick={handleCheckout} className="gi-btn-2">
-                            Place Order
+                          Realizar pedido
                           </a>
                         </span>
                       ))}
@@ -1362,9 +1357,9 @@ const CheckOut = ({
                     data-aos-delay="200"
                   >
                     <h2 className="gi-title">
-                      New <span>Arrivals</span>
+                      Nuevos <span>Productos llegados</span>
                     </h2>
-                    <p>Browse The Collection of Top Products</p>
+                    <p>Explora la colección de los mejores productos</p>
                   </Fade>
                   <Fade
                     direction="up"

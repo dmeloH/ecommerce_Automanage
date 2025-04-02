@@ -226,7 +226,7 @@ const VendorDeshboard = () => {
               </Row>
               <div className="gi-vendor-dashboard-card m-b-30px">
                 <div className="gi-vendor-card-header">
-                  <h5>Latest Order</h5>
+                  <h5>Últimos pedidos</h5>
                   <div className="gi-header-btn">
                     <a className="gi-btn-2" href="#">
                       View All

@@ -49,7 +49,7 @@ const BlogPage = ({ order = "", lg = 12, md }: any) => {
     setSearchInput(searchTerm || "");
   }, [searchTerm]);
 
-  if (error) return <div>Failed to load products</div>;
+  if (error) return <div>No se pudieron cargar los productos</div>;
 
   const { data: posts = [], totalPages = 0 } = data || {};
 

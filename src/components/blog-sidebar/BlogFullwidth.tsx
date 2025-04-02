@@ -24,7 +24,7 @@ const BlogFullwidth = ({ order = "", lg, md, }: any) => {
     ([url, postData]) => fetcher(url, postData)
   );
 
-  if (error) return <div>Failed to load products</div>;
+  if (error) return <div>No se pudieron cargar los productos</div>;
 
   const { data: posts = [], totalPages = 0 } = data || {};
 
@@ -56,7 +56,7 @@ const BlogFullwidth = ({ order = "", lg, md, }: any) => {
           <span>
             Showing {(currentPage - 1) * itemsPerPage + 1}-
             {Math.min(currentPage * itemsPerPage, posts.length)} of{" "}
-            {posts.length} item(s)
+            {posts.length} artículo(s)
           </span>
           <Paginantion
             currentPage={currentPage}

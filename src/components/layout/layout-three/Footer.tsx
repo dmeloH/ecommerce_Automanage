@@ -26,7 +26,7 @@ const Footer = ({
     onError,
   });
 
-  if (error) return <div>Failed to load products</div>;
+  if (error) return <div>No se pudieron cargar los productos</div>;
   if (!data) return <div></div>;
 
   const getData = () => {

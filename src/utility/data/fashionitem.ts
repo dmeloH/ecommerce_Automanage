@@ -11,8 +11,8 @@ interface Fashion {
 const fashionitem: Fashion[] = [
   {
     id: 71,
-    name: "Fashion",
-    title: "Men's stylish printed shirt",
+    name: "Motor",
+    title: "Kit de Reparación de Motor",
     image: process.env.NEXT_PUBLIC_URL + "/assets/img/product-images/32_1.jpg",
     quantity: 1,
     newPrice: 42.00,
@@ -20,8 +20,8 @@ const fashionitem: Fashion[] = [
   },
   {
     id: 86,
-    name: "Baby Wear",
-    title: "Cotton Clothes Sets for Boys",
+    name: "Accesorios",
+    title: "Kit de Limpieza para Auto",
     image: process.env.NEXT_PUBLIC_URL + "/assets/img/product-images/37_1.jpg",
     quantity: 1,
     newPrice: 25.00,
@@ -29,8 +29,8 @@ const fashionitem: Fashion[] = [
   },
   {
     id: 62,
-    name: "Belt",
-    title: "Men's Leather Belt",
+    name: "Transmisión",
+    title: "Correa de Distribución Premium",
     image: process.env.NEXT_PUBLIC_URL + "/assets/img/product-images/49_1.jpg",
     quantity: 1,
     newPrice: 62.00,
@@ -38,8 +38,8 @@ const fashionitem: Fashion[] = [
   },
   {
     id: 63,
-    name: "perfume",
-    title: "Long lasting perfume",
+    name: "Cuidado",
+    title: "Aromatizante para Auto",
     image: process.env.NEXT_PUBLIC_URL + "/assets/img/product-images/50_1.jpg",
     quantity: 1,
     newPrice: 10.00,
@@ -47,8 +47,8 @@ const fashionitem: Fashion[] = [
   },
   {
     id: 73,
-    name: "Lipstick",
-    title: "Liquid Matte Lipstick",
+    name: "Herramientas",
+    title: "Juego de Llaves de Torque",
     image: process.env.NEXT_PUBLIC_URL + "/assets/img/product-images/54_1.jpg",
     quantity: 1,
     newPrice: 52.00,
@@ -56,12 +56,12 @@ const fashionitem: Fashion[] = [
   },
   {
     id: 101,
-    name: "shoes",
-    title: "Men's sport shoes blue",
+    name: "Llantas",
+    title: "Neumáticos All-Season",
     image: process.env.NEXT_PUBLIC_URL + "/assets/img/product-images/41_1.jpg",
     quantity: 1,
     newPrice: 20.00,
     oldPrice: 30.00,
   },
-]
+];
 export default fashionitem;

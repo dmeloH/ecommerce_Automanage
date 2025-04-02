@@ -7,30 +7,29 @@ interface Facts {
   
   const facts: Facts[] = [
     {
-      counter: "65K+",
-      discription: "Contrary to popular belief, Lorem is not simply random text.",
-      name: "Vendors",
+      counter: "650+",
+      discription: "Proveedores certificados en nuestro ecosistema automotriz",
+      name: "Proveedores",
       item: 320,
     },
     {
-      counter: "$45B+",
-      discription: "Contrary to popular belief, Lorem is not simply random text.",
-      name: "Earnings",
+      counter: "$4.5M+",
+      discription: "Facturación anual en repuestos y accesorios",
+      name: "Ventas Anuales",
       item: 65,
     },
     {
-      counter: "25M+",
-      discription: "Contrary to popular belief, Lorem is not simply random text.",
-      name: "Sold",
+      counter: "25K+",
+      discription: "Repuestos entregados satisfactoriamente",
+      name: "Repuestos Vendidos",
       item: 548,
     },
     {
-      counter: "70K+",
-      discription: "Contrary to popular belief, Lorem is not simply random text.",
-      name: "Products",
+      counter: "700+",
+      discription: "Referencias disponibles en nuestro catálogo",
+      name: "Productos Disponibles",
       item: 48,
     },
-    
-  ];
+];
 export default facts;
   

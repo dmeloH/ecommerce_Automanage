@@ -10,7 +10,7 @@ const UserHistory = () => {
     (state: RootState) => state.wishlist.wishlist
   );
   const login = useSelector(
-    (state: RootState) => state.registration.isAuthenticated
+    (state: RootState) => state.registration?.isAuthenticated
   );
   const [currentDate, setCurrentDate] = useState(
     new Date().toLocaleDateString("en-GB")
@@ -24,8 +24,8 @@ const UserHistory = () => {
     return (
       <div className="container">
         <p>
-          Please <a href="/login">login</a> or <a href="/register">register</a>{" "}
-          to view this page.
+          Porfavor <a href="/login">Inicia sesión</a> o <a href="/register">registrate</a>{" "}
+          para ver esta página.
         </p>
       </div>
     );
@@ -40,10 +40,10 @@ const UserHistory = () => {
             <div className="col-lg-9 col-md-12 mb-24">
               <div className="gi-vendor-dashboard-card">
                 <div className="gi-vendor-card-header">
-                  <h5>Latest Order</h5>
+                  <h5>Último pedido</h5>
                   <div className="gi-header-btn">
                     <a className="gi-btn-2" href="#">
-                      View All
+                      Ver todo
                     </a>
                   </div>
                 </div>
@@ -54,12 +54,12 @@ const UserHistory = () => {
                         <thead>
                           <tr>
                             <th scope="col">ID</th>
-                            <th scope="col">Image</th>
-                            <th scope="col">Name</th>
-                            <th scope="col">Date</th>
-                            <th scope="col">Price</th>
-                            <th scope="col">Status</th>
-                            <th scope="col">Actions</th>
+                            <th scope="col">Imagen</th>
+                            <th scope="col">Nombre</th>
+                            <th scope="col">Fecha</th>
+                            <th scope="col">Precio</th>
+                            <th scope="col">Estado</th>
+                            <th scope="col">Acción</th>
                           </tr>
                         </thead>
                         <tbody className="wish-empt">
@@ -96,7 +96,7 @@ const UserHistory = () => {
                               <td>
                                 <span>
                                   <a className="gi-btn-2" href="#">
-                                    View All
+                                    Ver todo
                                   </a>
                                 </span>
                               </td>
@@ -105,7 +105,7 @@ const UserHistory = () => {
                         </tbody>
                       </table>
                     ) : (
-                      <p>You have no latest orders!</p>
+                      <p>¡No tienes pedidos recientes!</p>
                     )}
                   </div>
                 </div>

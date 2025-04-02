@@ -7,18 +7,18 @@ interface Service {
   const fashiontwobanner: Service[] = [
     {
       image: process.env.NEXT_PUBLIC_URL + "/assets/img/banner/12.jpg",
-      name: "Women's Collection",
-      num: 50
+      name: "Frenos y Suspensión",
+      num: 45
     },
     {
       image: process.env.NEXT_PUBLIC_URL + "/assets/img/banner/13.jpg",
-      name: "Kid's Collection",
-      num : 60
+      name: "Repuestos de Motor",
+      num: 65
     },
     {
       image: process.env.NEXT_PUBLIC_URL + "/assets/img/banner/14.jpg",
-      name: "Men's Collection",
-      num : 70
+      name: "Accesorios y Herramientas",
+      num: 55
     },
   ];
   export default fashiontwobanner

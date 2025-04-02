@@ -35,10 +35,10 @@ export const PDFContent = ({
             href="#"
             onClick={handlePrint}
           >
-            Print
+            Imprimir
           </a>
           <a className="gi-btn-2" href="#" onClick={handleExport}>
-            Export
+          Exportar
           </a>
         </div>
       </div>

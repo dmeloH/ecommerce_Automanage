@@ -6,12 +6,12 @@ interface vendor {
 
 const vendordeshboard: vendor[] = [
   {
-    name: "User Profile",
+    name: "Perfil de usuario",
     href: "/user-profile",
     slug: "user-profile"
   },
   {
-    name: "User History",
+    name: "Historial de usuario",
     href: "/user-history",
     slug: "user-history"
   },
@@ -36,22 +36,22 @@ const vendordeshboard: vendor[] = [
     slug: "vendor-list-2"
   },
   {
-    name: "Cart",
+    name: "Carrito",
     href: "/cart",
     slug: "cart"
   },
   {
-    name: "Checkout",
+    name: "Verificar",
     href: "/checkout",
     slug: "checkout"
   },
   {
-    name: "Track Order",
+    name: "Seguimiento del pedido",
     href: "/track-order",
     slug: "track-order"
   },
   {
-    name: "Invoice",
+    name: "factura",
     href: "/user-invoice",
     slug: "user-invoice"
   },

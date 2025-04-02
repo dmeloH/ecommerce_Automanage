@@ -6,7 +6,7 @@ const page = () => {
         <>
 
 
-            <Breadcrumb title={"Profile Edit"} />
+            <Breadcrumb title={"Editar perfil"} />
             <RagisterEditPage />
 
         </>

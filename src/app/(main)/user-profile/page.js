@@ -8,7 +8,7 @@ const page = () => {
         <>
 
 
-            <Breadcrumb title={"Profile"} />
+            <Breadcrumb title={"Perfil"} />
             <UserProfile />
 
         </>

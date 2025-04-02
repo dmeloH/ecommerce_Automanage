@@ -98,14 +98,14 @@ const ThemeSwitcher = () => {
           <i className="fi fi-rr-settings"></i>
         </a>
         <div className="gi-bar-title">
-          <h6>Tools</h6>
+          <h6>Personaliza a tu gusto!!</h6>
           <a href="#" className="close-tools">
             <i onClick={closeSidebar} className="ri-close-line"></i>
           </a>
         </div>
         <div className="gi-tools-detail">
           <div className="gi-tools-block">
-            <h3>Select Color</h3>
+            <h3>Selecciona el color</h3>
             <ul className="gi-color">
               {colorCss.length > 0 && colorCss.map((each, index) => (
                 <li
@@ -121,7 +121,7 @@ const ThemeSwitcher = () => {
             </ul>
           </div>
           <div className="gi-tools-block">
-            <h3>Direction Switching</h3>
+            <h3>Cambio de dirección</h3>
             <div className="gi-tools-rtl">
               <div
                 onClick={() => handleDirection("LTR")}
@@ -129,7 +129,7 @@ const ThemeSwitcher = () => {
                 data-gi-mode-tool="ltr"
               >
                 <img src={process.env.NEXT_PUBLIC_URL + "/assets/img/tools/ltr.png"} alt="ltr" />
-                <p>LTR</p>
+                <p>Izquierda a Derecha</p>
               </div>
               <div
                 onClick={() => handleDirection("RTL")}
@@ -137,12 +137,12 @@ const ThemeSwitcher = () => {
                 data-gi-mode-tool="rtl"
               >
                 <img src={process.env.NEXT_PUBLIC_URL + "/assets/img/tools/rtl.png"} alt="rtl" />
-                <p>RTL</p>
+                <p>Derecha a Izquierda</p>
               </div>
             </div>
           </div>
           <div className="gi-tools-block">
-            <h3>Dark Modes</h3>
+            <h3>Modos oscuros</h3>
             <div className="gi-tools-dark">
               <div
                 onClick={() => dispatch(toggleMode())}
@@ -152,7 +152,7 @@ const ThemeSwitcher = () => {
                 data-gi-mode-dark="light"
               >
                 <img src={process.env.NEXT_PUBLIC_URL + "/assets/img/tools/light.png"} alt="light" />
-                <p>Light</p>
+                <p>Claro</p>
               </div>
               <div
                 onClick={() => dispatch(toggleMode())}
@@ -160,7 +160,7 @@ const ThemeSwitcher = () => {
                 data-gi-mode-dark="dark"
               >
                 <img src={process.env.NEXT_PUBLIC_URL + "/assets/img/tools/dark.png"} alt="dark" />
-                <p>Dark</p>
+                <p>Oscuro</p>
               </div>
             </div>
           </div>

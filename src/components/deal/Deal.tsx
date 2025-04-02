@@ -16,7 +16,7 @@ const Deal = ({
 }) => {
   const { data, error } = useSWR("/api/deal", fetcher, { onSuccess, onError });
 
-  if (error) return <div>Failed to load products</div>;
+  if (error) return <div>No se pudieron cargar los productos</div>;
   if (!data)
     return (
       <div>
@@ -48,9 +48,9 @@ const Deal = ({
                   <Fade triggerOnce direction="up" duration={2000} delay={200}>
                     <div className="section-detail">
                       <h2 className="gi-title">
-                        Day of the <span>deal</span>
+                      Reloj en marcha: 24 horas  <span>para ahorrar fuerte ⏳</span>
                       </h2>
-                      <p>Don`t wait. The time will never be just right.</p>
+                      <p>¡Ataque de descuentos! Nadie se salva (de comprar) 💳🤪</p>
                     </div>
                   </Fade>
                   <DealendTimer />

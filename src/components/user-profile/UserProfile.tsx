@@ -41,15 +41,15 @@ const UserProfile = () => {
     return (
       <div className="container">
         <p>
-          Please <a href="/login">login</a> or <a href="/register">register</a>{" "}
-          to view this page.
+          Porfavor <a href="/login">Inicia sesion</a> o <a href="/register">registrate</a>{" "}
+          para ver esta página.
         </p>
       </div>
     );
   }
 
   if (!userData) {
-    return <div>Loading...</div>;
+    return <div>Cargando...</div>;
   }
 
   const handleSubmit = (e: any) => {
@@ -106,12 +106,12 @@ const UserProfile = () => {
               <div className="gi-vendor-profile-card gi-vendor-profile-card">
                 <div className="gi-vendor-card-body">
                   <div className="gi-vender-about-block">
-                    <h5>Account Information</h5>
+                    <h5>Información de la cuenta</h5>
                   </div>
                   <Row className="mb-minus-24px">
                     <div className="col-md-6 col-sm-12 mb-24">
                       <div className="gi-vendor-detail-block">
-                        <h6>E-mail address</h6>
+                        <h6>Dirección de correo electrónico</h6>
                         <ul>
                           <li>
                             <strong>Email 1 : </strong>
@@ -123,10 +123,10 @@ const UserProfile = () => {
                     </div>
                     <div className="col-md-6 col-sm-12 mb-24">
                       <div className="gi-vendor-detail-block">
-                        <h6>Contact nubmer</h6>
+                        <h6>Número de contacto</h6>
                         <ul>
                           <li>
-                            <strong>Phone Nubmer 1 : </strong>
+                            <strong>Número de teléfono 1 : </strong>
                             {userData.phoneNumber}
                           </li>
                           {/* <li><strong>Phone Nubmer 2 : </strong>(123) 123 456 7890</li> */}
@@ -135,10 +135,10 @@ const UserProfile = () => {
                     </div>
                     <div className="col-md-12 col-sm-12 mb-24">
                       <div className="gi-vendor-detail-block">
-                        <h6>Address</h6>
+                        <h6>Dirección</h6>
                         <ul>
                           <li>
-                            <strong>Home : </strong>
+                            <strong>Residencia : </strong>
                             {userData.address}.
                           </li>
                         </ul>

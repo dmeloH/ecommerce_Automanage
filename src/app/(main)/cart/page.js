@@ -6,7 +6,7 @@ const page = () => {
     <>
 
 
-      <Breadcrumb title={"Cart"} />
+      <Breadcrumb title={"Carrito"} />
       <Cart />
 
     </>

@@ -8,7 +8,7 @@ const page = () => {
         <>
 
 
-            <Breadcrumb title={"Product Page"} />
+            <Breadcrumb title={"Página de productos"} />
             <section className="gi-single-product padding-tb-40">
                 <div className="container">
                     <Row>

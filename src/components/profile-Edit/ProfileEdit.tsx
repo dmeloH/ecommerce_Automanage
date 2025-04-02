@@ -118,9 +118,9 @@ const ProfileEdit = () => {
         <div className="container">
           <div className="section-title-2">
             <h2 className="gi-title">
-              Edit Profile<span></span>
+              Editar perfil<span></span>
             </h2>
-            <p>Best place to buy and sell digital products.</p>
+            <p>Repuestos originales con garantía certificada</p>
           </div>
           <div className="row">
             <div className="gi-register-wrapper">
@@ -158,7 +158,7 @@ const ProfileEdit = () => {
                     onSubmit={handleSubmit}
                   >
                     <span className="gi-register-wrap gi-register-half">
-                      <label>First Name*</label>
+                      <label>Primer nombre*</label>
                       <Form.Group>
                         <Form.Control
                           type="text"
@@ -169,12 +169,12 @@ const ProfileEdit = () => {
                           required
                         />
                          <Form.Control.Feedback type="invalid">
-                          Please Enter First Name.
+                          Porfavor ingrese su primer nombre.
                         </Form.Control.Feedback>
                       </Form.Group>
                     </span>
                     <span className="gi-register-wrap gi-register-half">
-                      <label>Last Name*</label>
+                      <label>Apellido*</label>
                       <Form.Group>
                         <Form.Control
                           type="text"
@@ -185,7 +185,7 @@ const ProfileEdit = () => {
                           onChange={handleInputChange}
                         />
                          <Form.Control.Feedback type="invalid">
-                          Please Enter Last Name.
+                          Porfavor ingrese su apellido.
                         </Form.Control.Feedback>
                       </Form.Group>
                      
@@ -205,7 +205,7 @@ const ProfileEdit = () => {
                           onChange={handleInputChange}
                         />
                         <Form.Control.Feedback type="invalid">
-                          Please Enter correct username.
+                        Por favor ingrese un nombre de usuario correcto.
                         </Form.Control.Feedback>
                       </Form.Group>
                     </span>
@@ -213,7 +213,7 @@ const ProfileEdit = () => {
                       style={{ marginTop: "10px" }}
                       className="gi-register-wrap gi-register-half"
                     >
-                      <label>Phone Number*</label>
+                      <label>Numero de teléfono*</label>
                       <Form.Group>
                         <Form.Control
                           type="text"
@@ -225,7 +225,7 @@ const ProfileEdit = () => {
                           onChange={handleInputChange}
                         />
                         <Form.Control.Feedback type="invalid">
-                          Please Enter 10-12 digit number.
+                        Ingrese un número de 10-12 dígitos.
                         </Form.Control.Feedback>
                       </Form.Group>
                     </span>
@@ -233,7 +233,7 @@ const ProfileEdit = () => {
                       style={{ marginTop: "10px" }}
                       className="gi-register-wrap"
                     >
-                      <label>Address</label>
+                      <label>Dirección</label>
                       <Form.Group>
                         <Form.Control
                           type="text"
@@ -244,7 +244,7 @@ const ProfileEdit = () => {
                           required
                         />
                          <Form.Control.Feedback type="invalid">
-                          Please Enter Address.
+                          Porfavor ingrese su dirección.
                         </Form.Control.Feedback>
                       </Form.Group>
                     </span>
@@ -254,7 +254,7 @@ const ProfileEdit = () => {
                     >
                       <div className="gi-leave-form">
                         <Form.Group>
-                          <label>About Me</label>
+                          <label>Sobre mi</label>
                           <Form.Control
                             as="textarea"
                             rows={3}
@@ -265,7 +265,7 @@ const ProfileEdit = () => {
                             onChange={handleInputChange}
                           />
                           <Form.Control.Feedback type="invalid">
-                          This field is required
+                          Este campo es obligatorio
                           </Form.Control.Feedback>
                         </Form.Group>
                       </div>
@@ -275,7 +275,7 @@ const ProfileEdit = () => {
                       style={{ paddingTop: "10px", marginTop: "10px" }}
                       className="gi-register-wrap"
                     >
-                      <label>Profile Photo</label>
+                      <label>Foto de perfil</label>
                       <input
                         style={{ paddingTop: "10px" }}
                         type="file"
@@ -296,7 +296,7 @@ const ProfileEdit = () => {
                       className="gi-register-wrap gi-register-btn"
                     >
                       <button className="gi-btn-1" type="submit">
-                        Save
+                        Guardar cambios
                       </button>
                     </span>
                   </Form>

@@ -36,7 +36,7 @@ const Facts = ({
   const { data, error } = useSWR("/api/facts", fetcher, { onSuccess, onError });
 
   // Manejo de errores en la obtención de datos
-  if (error) return <div>Failed to load products</div>;
+  if (error) return <div>No se pudieron cargar los productos</div>;
   
   // Muestra el spinner mientras se cargan los datos
   if (!data)

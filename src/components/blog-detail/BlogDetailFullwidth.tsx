@@ -195,7 +195,7 @@ const BlogDetailFullwidth = ({ order = "" }: any) => {
             <div className="gi-blog-cmt-preview">
               <div className="gi-blog-comment-wrapper">
                 <h4 className="gi-blog-dgi-title">
-                  Comments : {comments.length}
+                Comentarios : {comments.length}
                 </h4>
                 {comments.map((data: any, index: number) => (
                   <div key={index}>
@@ -269,7 +269,7 @@ const BlogDetailFullwidth = ({ order = "" }: any) => {
             </div>
             <div className="gi-blog-cmt-form">
               <div className="gi-blog-reply-wrapper mt-50">
-                <h4 className="gi-blog-dgi-title">Leave A Reply</h4>
+                <h4 className="gi-blog-dgi-title">Deja una respuesta</h4>
 
                 <Formik
                   innerRef={formikRef}
@@ -313,12 +313,12 @@ const BlogDetailFullwidth = ({ order = "" }: any) => {
                                   style={{ marginBottom: "10px" }}
                                   type="invalid"
                                 >
-                                  Please enter comment
+                                  Por favor ingrese comentario
                                 </Form.Control.Feedback>
                               </InputGroup>
                             </Form.Group>
                             <button type="submit" className="gi-btn-2 mt-4">
-                              Submit
+                              Subir
                             </button>
                           </div>
                         </div>
