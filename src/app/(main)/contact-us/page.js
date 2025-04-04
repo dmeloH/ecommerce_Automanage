@@ -8,7 +8,7 @@ const page = () => {
         <>
 
 
-            <Breadcrumb title={"Contact Us"} />
+            <Breadcrumb title={"Contactenos"} />
             <Contact />
 
         </>

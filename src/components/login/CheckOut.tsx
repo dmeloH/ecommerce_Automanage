@@ -16,6 +16,7 @@ import { addOrder, clearCart, setOrders } from "@/store/reducers/cartSlice";
 import { login } from "@/store/reducers/registrationSlice";
 import { showErrorToast, showSuccessToast } from "../toast-popup/Toastify";
 import DiscountCoupon from "../discount-coupon/DiscountCoupon";
+import PaymentForm from "../paymentForm/PaymentForm";
 
 interface Address {
   id: string;
@@ -708,6 +709,8 @@ const CheckOut = ({
                     </div>
                   </div>
                   {/* <!-- Sidebar Payment Block --> */}
+
+                  <PaymentForm/>
                 </div>
                 <div className="gi-sidebar-wrap gi-check-pay-img-wrap">
                   {/* <!-- Sidebar Payment Block --> */}

@@ -9,7 +9,7 @@ import Team from '@/components/about-us/Team'
 const Page = () => {
     return (
         <>
-            <Breadcrumb title={"About Us"} />
+            <Breadcrumb title={"Sobre nosotros"} />
             <About />
             <Service />
             <Testimonials />
