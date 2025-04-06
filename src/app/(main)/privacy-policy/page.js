@@ -8,7 +8,7 @@ const page = () => {
         <>
 
 
-            <Breadcrumb title={"Privacy Policy"} />
+            <Breadcrumb title={"Política de privacidad"} />
             <PrivacyPolicy />
 
         </>

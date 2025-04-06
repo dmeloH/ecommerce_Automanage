@@ -4,16 +4,16 @@ interface Policy {
   
   const policy: Policy[] = [
     {
-      questions: "Welcome to Grabit Store.",
+      questions: "Bienvenido a Automanage.",
     },
     {
-      questions: "Grabit Websites",
+      questions: "¿Qué información personal recopila Automanage y cómo se utiliza?",
     },
     {
-      questions: "How browsing and vendor works?",
+      questions: "¿Automanage comparte o vende mis datos a terceros?",
     },
     {
-      questions: "Becoming an vendor",
+      questions: "¿Cómo se actualiza esta política y cómo seré notificado de cambios?",
     },
     
   ];

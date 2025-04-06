@@ -75,7 +75,7 @@ function HeaderManu() {
                               marginBottom: "10px",
                             }}
                           >
-                            <i className="fi-rr-cupcake"></i> Motor
+                            <i className="fi-rr-car"></i> Motor
 
                           </button>
                         </Tab>
@@ -98,7 +98,7 @@ function HeaderManu() {
                               marginBottom: "10px",
                             }}
                           >
-                            <i className="fi fi-rs-apple-whole"></i> Transmisión
+                            <i className="fi fi-rr-car"></i> Transmisión
 
                           </button>
                         </Tab>
@@ -121,7 +121,7 @@ function HeaderManu() {
                               marginBottom: "10px",
                             }}
                           >
-                            <i className="fi fi-rr-popcorn"></i>Suspensión
+                            <i className="fi fi-rr-car"></i>Suspensión
                           </button>
                         </Tab>
                         <Tab>
@@ -143,7 +143,7 @@ function HeaderManu() {
                               marginBottom: "10px",
                             }}
                           >
-                            <i className="fi fi-rr-drink-alt"></i>Electronica{" "}
+                            <i className="fi fi-rr-car"></i>Electronica{" "}
                           </button>
                         </Tab>
                       </div>

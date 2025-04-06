@@ -11,9 +11,9 @@ const PrivacyPolicy = () => {
         <div className="container">
           <div className="section-title-2">
             <h2 className="gi-title">
-              <span>Privacy</span> Policy
+              Política <span>Privacidad</span> 
             </h2>
-            <p>Browse The Collection of Top Products</p>
+            <p>Explora la colección de los mejores productos</p>
           </div>
           <Row>
             <Col lg={6}>

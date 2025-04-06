@@ -67,32 +67,27 @@ const About = () => {
                     Quiénes <span>somos?</span>
                   </h2>
                   <p>
-                    We’re here to serve only the best products for you.
-                    Enriching your homes with the best essentials.
+                  En Automanage entendemos que tu auto es más que un vehículo: es tu compañero de viaje, 
+                  tu herramienta de trabajo y una inversión que merece el mejor cuidado. 
+                  Por eso hemos creado un servicio donde la confianza y la tranquilidad son nuestra garantía.
                   </p>
                 </div>
                 
                 {/* Párrafos de información */}
                 <p>
-                  Lorem Ipsum is simply dummy text of the printing and
-                  typesetting industry. Lorem Ipsum has been the industry
-                  standard dummy text ever since the 1500s, when an unknown
-                  printer took a galley of type and scrambled it to make a type
-                  specimen book. It has survived not only five centuries, but
-                  also the leap into electronic typesetting, remaining
-                  essentially unchanged.
+                Trabajamos exclusivamente con proveedores certificados, cada repuesto pasa por 
+                 rigurosos controles de calidad antes de llegar a ti,
+                 y nuestro equipo de expertos está disponible para asesorarte en cada paso. 
+                 Sabemos que necesitas piezas duraderas, seguras y compatibles, y eso es exactamente 
+                 lo que encontrarás en nuestro catálogo
                 </p>
                 <p>
-                  Lorem Ipsum has survived not only five centuries, but also the
-                  leap into electronic typesetting, remaining essentially
-                  unchanged.
+                Además, protegemos cada compra con garantías reales y un proceso de entrega confiable. 
+                Porque en Automanage no solo vendemos repuestos; construimos relaciones a largo plazo. 
+                Puedes estar seguro: cuando eliges Automanage, tu auto queda en las mejores manos.
                 </p>
                 <p>
-                  Lorem Ipsum is simply dummy text of the printing and
-                  typesetting industry. Lorem Ipsum has been the industry
-                  standard dummy text ever since the 1500s, when an unknown
-                  printer took a galley of type and scrambled it to make a type
-                  specimen book.
+                ¿Listo para una experiencia sin preocupaciones? Nosotros ya estamos listos para atenderte. 🚗💙
                 </p>
               </div>
             </Col>

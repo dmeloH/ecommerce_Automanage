@@ -239,7 +239,7 @@ function Footer({ onSuccess = () => {}, onError = () => {} }) {
                             <a href="/cart">Ver Carrito</a>
                           </li>
                           <li className="gi-footer-link">
-                            <a href="/privacy-policy">Política de devoluciones</a>
+                            <a href="/privacy-policy">Política de privacidad</a>
                           </li>
                           <li className="gi-footer-link">
                             <a href="#">Become a Vendor</a>

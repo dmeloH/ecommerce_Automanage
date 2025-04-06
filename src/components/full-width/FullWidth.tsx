@@ -212,7 +212,7 @@ const FullWidth = ({
                   style={{ textAlign: "center" }}
                   className="gi-pro-content cart-pro-title"
                 >
-                  Products is not found.
+                  Productos no encontrados 
                 </div>
               ) : (
                 <div className="gi-pro-pagination">

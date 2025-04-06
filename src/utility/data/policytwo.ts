@@ -4,16 +4,16 @@ interface Policy {
   
   const policytwo: Policy[] = [
     {
-      questions: "How browsing and vendor works?",
+      questions: " ¿Automanage envía correos publicitarios? ¿Cómo puedo dejar de recibirlos?",
     },
     {
-      questions: "Becoming an vendor",
+      questions: "¿Qué pasa con mis datos si Automanage es vendido o fusionado?",
     },
     {
-      questions: "How browsing and vendor works?",
+      questions: "¿Cómo maneja Automanage los datos de menores de edad?",
     },
     {
-      questions: "Becoming an vendor",
+      questions: "¿Puedo acceder, corregir o eliminar mis datos almacenados?",
     },
     
   ];

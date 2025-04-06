@@ -7,8 +7,8 @@ interface Team {
 const team: Team[] = [
   {
     image: process.env.NEXT_PUBLIC_URL + "/assets/img/user/1.jpg",
-    name: "Olivia Smith",
-    title: "Founder",
+    name: "Esteban Ricardo",
+    title: "Programador",
   },
   {
     image: process.env.NEXT_PUBLIC_URL + "/assets/img/user/2.jpg",

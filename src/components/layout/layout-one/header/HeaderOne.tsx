@@ -102,7 +102,7 @@ function HeaderOne({ cartItems, wishlistItems }) {
                     className="dropdown-toggle"
                     id="dropdown-basic"
                   >
-                    Dólar
+                    COP
                     <i
                       className="fi-rr-angle-small-down"
                       aria-hidden="true"

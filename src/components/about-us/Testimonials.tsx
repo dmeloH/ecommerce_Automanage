@@ -72,9 +72,9 @@ const Team = ({
           {/* Título y descripción de la sección */}
           <div className="section-title-2">
             <h2 className="gi-title">
-              Our <span>Team</span>
+            No solo sabemos de piezas: <span>sabemos lo que valoras.</span>
             </h2>
-            <p>Meet our expert team members.</p>
+            <p>Detrás de cada repuesto hay personas comprometidas. Este es el equipo que hace posible tu tranquilidad al volante. 😄</p>
           </div>
           
           {/* Carrusel de miembros del equipo */}

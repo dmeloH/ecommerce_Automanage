@@ -8,26 +8,26 @@ interface Facts {
   const facts: Facts[] = [
     {
       counter: "650+",
-      discription: "Proveedores certificados en nuestro ecosistema automotriz",
-      name: "Proveedores",
+      discription: "Un ecosistema de proveedores de primer nivel, seleccionados para tu tranquilidad 😮‍💨",
+      name: "🌐 Proveedores ",
       item: 320,
     },
     {
       counter: "$4.5M+",
-      discription: "Facturación anual en repuestos y accesorios",
-      name: "Ventas Anuales",
+      discription: "FMiles de repuestos vendidos al año. La confianza tiene números: 4.5 millones de clientes.😲",
+      name: "💲Ventas Anuales",
       item: 65,
     },
     {
       counter: "25K+",
-      discription: "Repuestos entregados satisfactoriamente",
-      name: "Repuestos Vendidos",
+      discription: "¿Qué suena mejor? 'Repuesto entregado' o 'Problema resuelto'. Para nosotros, lo mismo. 📦",
+      name: "⚙️ Repuestos Vendidos",
       item: 548,
     },
     {
       counter: "700+",
-      discription: "Referencias disponibles en nuestro catálogo",
-      name: "Productos Disponibles",
+      discription: "Explora nuestro catálogo: ahí está la referencia que hará brillar a tu auto.✨",
+      name: "🛒 Productos Disponibles",
       item: 48,
     },
 ];

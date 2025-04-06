@@ -9,7 +9,7 @@ const page = () => {
     <>
 
 
-      <Breadcrumb title={"Shop Page"} />
+      <Breadcrumb title={"Página de la tienda"} />
       <section className="gi-shop">
         <div className="container">
           <Category />
