@@ -16,7 +16,7 @@ import { addOrder, clearCart, setOrders } from "@/store/reducers/cartSlice";
 import { login } from "@/store/reducers/registrationSlice";
 import { showErrorToast, showSuccessToast } from "../toast-popup/Toastify";
 import DiscountCoupon from "../discount-coupon/DiscountCoupon";
-import PaymentForm from "../paymentForm/PaymentForm";
+import PaymentForm from "../paymentForm/PaymentForm.js";
 
 interface Address {
   id: string;
