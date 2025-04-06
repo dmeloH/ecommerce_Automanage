@@ -101,7 +101,6 @@ const CheckOut = ({
     (state: RootState) => state.registration.isAuthenticated
   );
 
-  // const [isTermsChecked, setIsTermsChecked] = useState(false);
   const [subTotal, setSubTotal] = useState(0);
   const [vat, setVat] = useState(0);
   const [discount, setDiscount] = useState(0);
