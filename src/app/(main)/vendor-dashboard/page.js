@@ -8,7 +8,7 @@ const page = () => {
         <>
 
 
-            <Breadcrumb title={"Vendor Deshboard"} />
+            <Breadcrumb title={"Tablero de proveedores"} />
             <VendorDeshboard />
 
         </>

@@ -55,7 +55,7 @@ const MultiCatalog = ({
             <Col lg={3} md={6}>
               <div className="gi-vendor-dashboard-sort-card">
                 <h5>Neon Foods</h5>
-                <span>( Retail Business )</span>
+                <span>( Negocio al por menor )</span>
               </div>
             </Col>
             <Col lg={3} md={6}>

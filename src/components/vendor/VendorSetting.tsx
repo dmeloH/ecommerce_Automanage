@@ -67,26 +67,26 @@ const VendorSetting = () => {
                 <div className="gi-vendor-card-body">
                   <div className="m-b-30">
                     <div className="gi-vendor-settings">
-                      <h5>About Our Firm</h5>
+                      <h5>Acerca de nuestra firma</h5>
                       <p>
                         {userData?.description ? (
                           userData?.description
                         ) : (
                           <>
-                            You have no description. i will add by{" "}
-                            <Link href={"/vendor-setting-edit"}>this link</Link>
+                            No tienes descripción. La agregaré por{" "}
+                            <Link href={"/vendor-setting-edit"}>éste link</Link>
                           </>
                         )}
                       </p>
                     </div>
                   </div>
                   <div className="gi-vendor-settings-card">
-                    <h5>Account Information</h5>
+                    <h5>Información de la cuenta</h5>
                   </div>
                   <div className="row">
                     <div className="col-md-6 col-sm-12">
                       <div className="gi-vendor-detail-block m-b-30">
-                        <h6>E-mail address </h6>
+                        <h6>E-mail</h6>
                         <ul>
                           <li>
                             <strong>Email 1 : </strong>
@@ -100,10 +100,10 @@ const VendorSetting = () => {
                     </div>
                     <div className="col-md-6 col-sm-12">
                       <div className="gi-vendor-detail-block m-b-30">
-                        <h6>Contact nubmer</h6>
+                        <h6>Número de contacto</h6>
                         <ul>
                           <li>
-                            <strong>Phone Nubmer 1 : </strong>(123){" "}
+                            <strong>Número de teléfono 1 : </strong>(+57){" "}
                             {userData?.phoneNumber}
                           </li>
                         </ul>
@@ -111,44 +111,44 @@ const VendorSetting = () => {
                     </div>
                     <div className="col-md-6 col-sm-12">
                       <div className="gi-vendor-detail-block m-b-30">
-                        <h6>Address</h6>
+                        <h6>Dirección</h6>
                         <ul>
                           <li>
                             <strong>Office : </strong>
                             {userData?.office_address}
                           </li>
                           <li>
-                            <strong>Home : </strong>123,{userData?.home_address}{" "}
+                            <strong>Hogar : </strong>123,{userData?.home_address}{" "}
                           </li>
                         </ul>
                       </div>
                     </div>
                     <div className="col-md-6 col-sm-12">
                       <div className="gi-vendor-detail-block">
-                        <h6>Tax Information</h6>
+                        <h6>Información fiscal</h6>
                         <ul>
                           <li>
-                            <strong>Tax ID Name: </strong>
+                            <strong>Nombre de identificación fiscal: </strong>
                             {userData?.taxIdName}
                           </li>
                           <li>
-                            <strong>SSN OR EIN: </strong>
+                            <strong>Número de Seguro Social o EIN: </strong>
                             {userData?.ssnOrEin}
                           </li>
                           <li>
-                            <strong>PAN NO: </strong>
+                            <strong>Identificador Interno de la Empresa: </strong>
                             {userData?.panNo}
                           </li>
                           <li>
-                            <strong>Business Type: </strong>
+                            <strong>Tipo de negocio: </strong>
                             {userData?.businessType}
                           </li>
                           <li>
-                            <strong>Bank Name: </strong>
+                            <strong>Nombre del banco: </strong>
                             {userData?.bankName}
                           </li>
                           <li>
-                            <strong>Bank Account No: </strong>
+                            <strong>Número de cuenta bancaria: </strong>
                             {userData?.bankAccountNo}
                           </li>
                         </ul>
@@ -164,7 +164,7 @@ const VendorSetting = () => {
                         onClick={handleEditBtn}
                       >
                         <i className="fi fi-rr-pencil"></i>
-                        Edit
+                        Editar
                       </a>
                     </div>
                   </div>

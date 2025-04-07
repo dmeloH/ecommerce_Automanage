@@ -16,22 +16,22 @@ const vendordeshboard: vendor[] = [
     slug: "user-history"
   },
   {
-    name: "Vendor Dashboard",
+    name: "Panel de proveedor",
     href: "/vendor-dashboard",
     slug: "vendor-dashboard"
   },
   {
-    name: "Vendor Settings",
+    name: "Configuración del proveedor",
     href: "/vendor-setting",
     slug: "vendor-setting"
   },
   {
-    name: "Vendor Upload",
+    name: "Subir proveedor",
     href: "/vendor-upload",
     slug: "vendor-upload"
   },
   {
-    name: "Vendor List",
+    name: "Lista de proveedores",
     href: "/vendor-list-2",
     slug: "vendor-list-2"
   },

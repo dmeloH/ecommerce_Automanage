@@ -6,7 +6,7 @@ const page = () => {
         <>
 
 
-            <Breadcrumb title={"Vendor Setting"} />
+            <Breadcrumb title={"Configuración del proveedor"} />
             <VandorSettingEdit />
 
         </>

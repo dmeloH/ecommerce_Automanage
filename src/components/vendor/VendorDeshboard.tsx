@@ -40,18 +40,18 @@ const VendorDeshboard = () => {
     colors: ["#fadfa2", "#89a6ff", "#54d3c2"],
     xaxis: {
       categories: [
-        "Jan",
+        "Ene",
         "Feb",
         "Mar",
-        "Apr",
+        "Abr",
         "May",
         "Jun",
         "Jul",
-        "Aug",
+        "Ago",
         "Sep",
         "Oct",
         "Nov",
-        "Dec",
+        "Dic",
       ],
       axisTicks: {
         show: false,
@@ -124,12 +124,12 @@ const VendorDeshboard = () => {
 
   const series: any = [
     {
-      name: "Orders",
+      name: "Órdenes",
       type: "bar",
       data: [23, 12, 23, 22, 15, 42, 31, 27, 45, 28, 37, 45],
     },
     {
-      name: "Revenue",
+      name: "Ganancia",
       type: "line",
       data: [
         44.64, 55.48, 45.15, 67.62, 52.57, 44.38, 41.85, 41.44, 56.56, 27.84,
@@ -137,7 +137,7 @@ const VendorDeshboard = () => {
       ],
     },
     {
-      name: "Expense",
+      name: "Gastos",
       type: "line",
       data: [
         30.55, 24.67, 36.85, 37.08, 42.85, 38.85, 46.64, 45.42, 49.89, 36.56,
@@ -161,8 +161,8 @@ const VendorDeshboard = () => {
     return (
       <div className="container">
         <p>
-          Please <a href="/login">login</a> or <a href="/register">register</a>{" "}
-          to view this page.
+          Profavor <a href="/login">Inicia sesión</a> o <a href="/register">registrate</a>{" "}
+        para ver esta página.
         </p>
       </div>
     );
@@ -187,11 +187,11 @@ const VendorDeshboard = () => {
                         alt="vendor"
                       />
                       <div className="v-detail">
-                        <h5>Centora Fashion</h5>
+                        <h5>🚀 ¡Gracias por ser nuestro aliado en Automanage!</h5>
                         <p>
-                          Lorem Ipsum is simply dummy text of the printing and
-                          typesetting industry. Standard dummy text ever since
-                          the 1500s.
+                          📊 Revisa tus ventas y estadísticas.<br />
+                          🛍️ Gestiona tus productos fácilmente.<br />
+                          📈 ¡Creamos éxito juntos!
                         </p>
                       </div>
                     </div>
@@ -201,25 +201,25 @@ const VendorDeshboard = () => {
               <Row>
                 <Col lg={3} md={6}>
                   <div className="gi-vendor-dashboard-sort-card">
-                    <h5>Products</h5>
+                    <h5>Productos</h5>
                     <h3>625</h3>
                   </div>
                 </Col>
                 <Col lg={3} md={6}>
                   <div className="gi-vendor-dashboard-sort-card">
-                    <h5>Orders</h5>
+                    <h5>Ordenes</h5>
                     <h3>56</h3>
                   </div>
                 </Col>
                 <Col lg={3} md={6}>
                   <div className="gi-vendor-dashboard-sort-card">
-                    <h5>Earnings</h5>
-                    <h3>$56</h3>
+                    <h5>Ganancias</h5>
+                    <h3>$800.000</h3>
                   </div>
                 </Col>
                 <Col lg={3} md={6}>
                   <div className="gi-vendor-dashboard-sort-card">
-                    <h5>Sales</h5>
+                    <h5>Ventas</h5>
                     <h3>550</h3>
                   </div>
                 </Col>
@@ -229,7 +229,7 @@ const VendorDeshboard = () => {
                   <h5>Últimos pedidos</h5>
                   <div className="gi-header-btn">
                     <a className="gi-btn-2" href="#">
-                      View All
+                      Ver todo
                     </a>
                   </div>
                 </div>
@@ -240,10 +240,10 @@ const VendorDeshboard = () => {
                         <thead>
                           <tr>
                             <th scope="col">ID</th>
-                            <th scope="col">Image</th>
-                            <th scope="col">Name</th>
-                            <th scope="col">Method</th>
-                            <th scope="col">Status</th>
+                            <th scope="col">Imagen</th>
+                            <th scope="col">Nombre</th>
+                            <th scope="col">Método</th>
+                            <th scope="col">Estado</th>
                             <th scope="col">Total</th>
                           </tr>
                         </thead>
@@ -266,10 +266,10 @@ const VendorDeshboard = () => {
                                 <span>{data.title}</span>
                               </td>
                               <td>
-                                <span>COD</span>
+                                <span>Opcional</span>
                               </td>
                               <td>
-                                <span>Pending</span>
+                                <span>Pendiente</span>
                               </td>
                               <td>
                                 <span>${data.newPrice}</span>
@@ -279,24 +279,24 @@ const VendorDeshboard = () => {
                         </tbody>
                       </table>
                     ) : (
-                      <p>You have no latest orders</p>
+                      <p>No tienes pedidos recientes</p>
                     )}
                   </div>
                 </div>
               </div>
               <div className="gi-vendor-dashboard-card m-b-30px">
                 <div className="gi-vendor-card-header">
-                  <h5>Product List</h5>
+                  <h5>Lista de productos</h5>
                   <div className="gi-header-btn">
                     <a
                       className="gi-btn-2"
                       href="#"
                       style={{ marginRight: "5px" }}
                     >
-                      View All
+                      Ver todo
                     </a>
                     <a className="gi-btn-2" href="#">
-                      ADD
+                      Agregar
                     </a>
                   </div>
                 </div>
@@ -306,10 +306,10 @@ const VendorDeshboard = () => {
                       <thead>
                         <tr>
                           <th scope="col">ID</th>
-                          <th scope="col">Image</th>
-                          <th scope="col">Name</th>
-                          <th scope="col">Method</th>
-                          <th scope="col">Status</th>
+                          <th scope="col">Imagen</th>
+                          <th scope="col">Nombre</th>
+                          <th scope="col">Método</th>
+                          <th scope="col">Estado</th>
                           <th scope="col">Total</th>
                         </tr>
                       </thead>
@@ -331,16 +331,16 @@ const VendorDeshboard = () => {
                             </span>
                           </td>
                           <td>
-                            <span>Crunchy Triangle Chips Snacks</span>
+                            <span>Filtro de Aceite Premium</span>
                           </td>
                           <td>
-                            <span>COD</span>
+                            <span>Opcional</span>
                           </td>
                           <td>
                             <span>Pending</span>
                           </td>
                           <td>
-                            <span>$548</span>
+                            <span>$548.000</span>
                           </td>
                         </tr>
                         <tr>
@@ -360,16 +360,16 @@ const VendorDeshboard = () => {
                             </span>
                           </td>
                           <td>
-                            <span>Dates Value Pack Pouch</span>
+                            <span>Pastillas de Freno Delanteras</span>
                           </td>
                           <td>
-                            <span>Cash</span>
+                            <span>Opcional</span>
                           </td>
                           <td>
-                            <span>Pending</span>
+                            <span>Pendiente</span>
                           </td>
                           <td>
-                            <span>$320</span>
+                            <span>$320.000</span>
                           </td>
                         </tr>
                         <tr>
@@ -389,16 +389,16 @@ const VendorDeshboard = () => {
                             </span>
                           </td>
                           <td>
-                            <span>Crunchy Triangle Chips Snacks</span>
+                            <span>Batería 12V 60Ah</span>
                           </td>
                           <td>
-                            <span>Ewallets</span>
+                            <span>Opcional</span>
                           </td>
                           <td>
-                            <span>On Way</span>
+                            <span>En camino</span>
                           </td>
                           <td>
-                            <span>$200</span>
+                            <span>$200.000</span>
                           </td>
                         </tr>
                         <tr>
@@ -418,16 +418,16 @@ const VendorDeshboard = () => {
                             </span>
                           </td>
                           <td>
-                            <span>Banana Chips Snacks & Spices</span>
+                            <span>Kit de Correa de Distribución</span>
                           </td>
                           <td>
-                            <span>Bank Transfers</span>
+                            <span>Opcional</span>
                           </td>
                           <td>
                             <span>Delivered</span>
                           </td>
                           <td>
-                            <span>$214</span>
+                            <span>$214.000</span>
                           </td>
                         </tr>
                       </tbody>
@@ -437,10 +437,10 @@ const VendorDeshboard = () => {
               </div>
               <div className="gi-vendor-dashboard-card">
                 <div className="gi-vendor-card-header">
-                  <h5>Growth statastics</h5>
+                  <h5>Estadísticas de crecimiento</h5>
                   <div className="gi-header-btn">
                     <a className="gi-btn-2" href="#">
-                      View All
+                      Ver todo
                     </a>
                   </div>
                 </div>

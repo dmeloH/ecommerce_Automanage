@@ -7,7 +7,7 @@ const page = () => {
     return (
         <>
 
-            <Breadcrumb title={"Settings"} />
+            <Breadcrumb title={"Ajustes"} />
             <VendorSetting />
 
         </>

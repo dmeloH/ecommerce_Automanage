@@ -304,7 +304,7 @@ const VendorUpload = () => {
                       </Col>
                       <Col md={6}>
                         <label htmlFor="productName" className="form-label">
-                          Product name
+                          Nombre del producto
                         </label>
                         <input
                           name="productName"
@@ -316,7 +316,7 @@ const VendorUpload = () => {
                         />
                       </Col>
                       <Col md={6}>
-                        <label className="form-label">Select Categories</label>
+                        <label className="form-label">Seleccionar categorías</label>
                         <select
                           name="category"
                           id="category"
@@ -324,22 +324,22 @@ const VendorUpload = () => {
                           value={formData.category}
                           onChange={handleChange}
                         >
-                          <optgroup defaultValue="" label="Fashion">
-                            <option value="t-shirt">T-shirt</option>
-                            <option value="dress">Dress</option>
+                          <optgroup defaultValue="" label="Electrónica">
+                            <option value="Pachas">Pachas</option>
+                            <option value="Sensores">Sensores</option>
                           </optgroup>
-                          <optgroup defaultValue="" label="Furniture">
-                            <option value="table">Table</option>
-                            <option value="sofa">Sofa</option>
+                          <optgroup defaultValue="" label="Estetica">
+                            <option value="Pintura">Pintura</option>
+                            <option value="Accesorios">Accesorios</option>
                           </optgroup>
-                          <optgroup defaultValue="" label="Electronic">
-                            <option value="phone">I Phone</option>
-                            <option value="laptop">Laptop</option>
+                          <optgroup defaultValue="" label="Mecanica">
+                            <option value="Motor">Motor</option>
+                            <option value="Suspensión">Suspensión</option>
                           </optgroup>
                         </select>
                       </Col>
                       <Col md={12}>
-                        <label className="form-label">Sort Description</label>
+                        <label className="form-label">Ordenar Descripción</label>
                         <textarea
                           name="shortDescription"
                           id="shortDescription"
@@ -350,7 +350,7 @@ const VendorUpload = () => {
                         ></textarea>
                       </Col>
                       <Col md={4} className="m-b-30">
-                        <label className="form-label">Colors</label>
+                        <label className="form-label">Colores</label>
                         {formData.colors.map((color: any, index: number) => (
                           <input
                             key={index}
@@ -365,7 +365,7 @@ const VendorUpload = () => {
                         ))}
                       </Col>
                       <Col md={8} className="m-b-30">
-                        <label className="form-label">Size</label>
+                        <label className="form-label">Tamaño</label>
                         <div className="form-checkbox-box">
                           <div className="form-check form-check-inline">
                             <input
@@ -426,7 +426,7 @@ const VendorUpload = () => {
                       </Col>
                       <Col md={6}>
                         <label className="form-label">
-                          Price <span>( In USD )</span>
+                          Precio <span>( en COP )</span>
                         </label>
                         <input
                           type="number"
@@ -438,7 +438,7 @@ const VendorUpload = () => {
                         />
                       </Col>
                       <Col md={6}>
-                        <label className="form-label">Quantity</label>
+                        <label className="form-label">Cantidad</label>
                         <input
                           type="number"
                           className="form-control"
@@ -449,7 +449,7 @@ const VendorUpload = () => {
                         />
                       </Col>
                       <Col md={12}>
-                        <label className="form-label">Ful Detail</label>
+                        <label className="form-label">Detalle completo</label>
                         <textarea
                           id="fullDetail"
                           name="fullDetail"
@@ -461,8 +461,8 @@ const VendorUpload = () => {
                       </Col>
                       <Col md={12}>
                         <label className="form-label">
-                          Product Tags{" "}
-                          <span>( Type and make comma to separate tags )</span>
+                        Etiquetas de producto{" "}
+                          <span>( Escriba y coloque una coma para separar las etiquetas )</span>
                         </label>
                         <div className="bootstrap-tagsinput">
                           <input
@@ -488,7 +488,7 @@ const VendorUpload = () => {
                       </Col>
                       <Col md={12}>
                         <button type="submit" className="btn gi-btn-2">
-                          Submit
+                          Subir producto
                         </button>
                       </Col>
                     </form>

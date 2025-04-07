@@ -67,8 +67,8 @@ const VandorSettingEdit = () => {
     return (
       <div className="container">
         <p>
-          Please <a href="/login">login</a> or <a href="/register">register</a>{" "}
-          to view this page.
+          Porfavor <a href="/login">Inicia sesión</a> o <a href="/register">registrate</a>{" "}
+          para ver esta pagina
         </p>
       </div>
     );
@@ -118,9 +118,9 @@ const VandorSettingEdit = () => {
       <div className="container">
         <div className="section-title-2">
           <h2 className="gi-title">
-            Edit Vendor<span></span>
+          Editar proveedor<span></span>
           </h2>
-          <p>Best place to buy and sell digital products.</p>
+          <p>El mejor lugar para comprar y vender productos digitales. 👩‍💻</p>
         </div>
         <div className="row">
           <div className="gi-register-wrapper">
@@ -155,7 +155,7 @@ const VandorSettingEdit = () => {
                               <Form.Control
                                 type="email"
                                 name="email"
-                                placeholder="Enter your email add..."
+                                placeholder="Introduce tu email "
                                 required
                                 value={values.email}
                                 onChange={handleChange}
@@ -174,11 +174,11 @@ const VandorSettingEdit = () => {
                             className="gi-register-wrap gi-register-half"
                           >
                             <Form.Group className="settings-field">
-                              <Form.Label>Phone Number*</Form.Label>
+                              <Form.Label>Número de teléfono*</Form.Label>
                               <Form.Control
                                 type="text"
                                 name="phoneNumber"
-                                placeholder="Enter your phone number"
+                                placeholder="Introduce tu número de teléfono"
                                 pattern="^\d{10,12}$"
                                 required
                                 value={values.phoneNumber}
@@ -195,11 +195,11 @@ const VandorSettingEdit = () => {
                           </span>
                           <span className="gi-register-wrap gi-register-half">
                             <Form.Group className="settings-field">
-                              <Form.Label>Tax ID Name*</Form.Label>
+                              <Form.Label>Nombre de identificación fiscal*</Form.Label>
                               <Form.Control
                                 type="text"
                                 name="taxIdName"
-                                placeholder="Enter your tax ID name"
+                                placeholder="Ingrese su nombre de identificación fiscal"
                                 value={values.taxIdName}
                                 onChange={handleChange}
                                 isInvalid={!!errors.taxIdName}
@@ -215,11 +215,11 @@ const VandorSettingEdit = () => {
                           </span>
                           <span className="gi-register-wrap gi-register-half">
                             <Form.Group className="settings-field">
-                              <Form.Label>SSN OR EIN*</Form.Label>
+                              <Form.Label>Número de Seguro Social o EIN*</Form.Label>
                               <Form.Control
                                 type="text"
                                 name="ssnOrEin"
-                                placeholder="Enter your SSN or EIN"
+                                placeholder="Ingrese su SSN o EIN"
                                 value={values.ssnOrEin}
                                 onChange={handleChange}
                                 isInvalid={!!errors.ssnOrEin}
@@ -235,12 +235,12 @@ const VandorSettingEdit = () => {
                           </span>
                           <span className="gi-register-wrap gi-register-half">
                             <Form.Group className="settings-field">
-                              <Form.Label>PAN NO*</Form.Label>
+                              <Form.Label>Identificador Interno de la Empresa*</Form.Label>
                               <Form.Control
                                 type="text"
                                 name="panNo"
                                 pattern="^\d{10,12}$"
-                                placeholder="Enter your PAN NO"
+                                placeholder="Ingrese su N.º Interno de la Empresa"
                                 value={values.panNo}
                                 onChange={handleChange}
                                 isInvalid={!!errors.panNo}
@@ -256,7 +256,7 @@ const VandorSettingEdit = () => {
                           </span>
                           <span className="gi-register-wrap gi-register-half">
                             <Form.Group className="settings-field">
-                              <Form.Label>Business Type *</Form.Label>
+                              <Form.Label>Tipo de negocio*</Form.Label>
                               <span
                                 className={`gi-rg-select-inner form-control ${
                                   !!errors.businessType ? "is-invalid" : ""
@@ -272,14 +272,14 @@ const VandorSettingEdit = () => {
                                   id="gi-select-city"
                                   className="gi-register-select"
                                 >
-                                  <option value="">Select Business Type</option>
+                                  <option value="">Seleccionar tipo de negocio</option>
                                   <option value="Partnership">
-                                    Partnership
+                                    Eléctrico
                                   </option>
                                   <option value="Corporation">
-                                    Corporation
+                                    Estetico
                                   </option>
-                                  <option value="Individual">Individual</option>
+                                  <option value="Individual">Mecánico</option>
                                 </Form.Control>
                               </span>
                               {errors.businessType &&
@@ -292,7 +292,7 @@ const VandorSettingEdit = () => {
                           </span>
                           <span className="gi-register-wrap gi-register-half">
                             <Form.Group className="settings-field">
-                              <Form.Label>Bank Name</Form.Label>
+                              <Form.Label>Nombre del banco</Form.Label>
                               <span
                                 className={`gi-rg-select-inner form-control  ${
                                   !!errors.bankName ? "is-invalid" : ""
@@ -307,13 +307,13 @@ const VandorSettingEdit = () => {
                                   id="gi-select-city"
                                   className="gi-register-select"
                                 >
-                                  <option value="">Select Bank</option>
+                                  <option value="">Seleccionar banco</option>
                                   <option value="Bank of India">
-                                    Bank of India
+                                    Bancos de colombia
                                   </option>
-                                  <option value="IDBI">IDBI</option>
-                                  <option value="ICIC">ICIC</option>
-                                  <option value="Kotak">Kotak</option>
+                                  <option value="IDBI">Bancolombia</option>
+                                  <option value="ICIC">Banco de Bogotá</option>
+                                  <option value="Kotak">Davivienda</option>
                                 </Form.Select>
                               </span>
                               {errors.bankName &&
@@ -326,11 +326,11 @@ const VandorSettingEdit = () => {
                           </span>
                           <span className="gi-register-wrap gi-register-half">
                             <Form.Group className="settings-field">
-                              <Form.Label>Bank Account No*</Form.Label>
+                              <Form.Label>Número de cuenta bancaria*</Form.Label>
                               <Form.Control
                                 type="text"
                                 name="bankAccountNo"
-                                placeholder="Enter your Bank Account No"
+                                placeholder="Ingrese su número de cuenta bancaria"
                                 value={values.bankAccountNo}
                                 onChange={handleChange}
                                 isInvalid={!!errors.bankAccountNo}
@@ -346,11 +346,11 @@ const VandorSettingEdit = () => {
                           </span>
                           <span className="gi-register-wrap">
                             <Form.Group className="settings-field">
-                              <Form.Label>Office Address</Form.Label>
+                              <Form.Label>Dirección del establecimiento</Form.Label>
                               <Form.Control
                                 type="text"
                                 name="office_address"
-                                placeholder="Address Line 1"
+                                placeholder="Dirección Línea 1"
                                 value={values.office_address}
                                 onChange={handleChange}
                                 isInvalid={!!errors.office_address}
@@ -366,11 +366,11 @@ const VandorSettingEdit = () => {
                           </span>
                           <span className="gi-register-wrap">
                             <Form.Group className="settings-field">
-                              <Form.Label>Home Address</Form.Label>
+                              <Form.Label>Dirección de casa</Form.Label>
                               <Form.Control
                                 type="text"
                                 name="home_address"
-                                placeholder="Address Line 1"
+                                placeholder="Dirección Línea 1"
                                 value={values.home_address}
                                 onChange={handleChange}
                                 isInvalid={!!errors.home_address}
@@ -386,12 +386,12 @@ const VandorSettingEdit = () => {
                           </span>
                           <span className="form-group gi-register-wrap">
                             <Form.Group className="settings-field">
-                              <Form.Label>About Me</Form.Label>
+                              <Form.Label>Acerca de mí</Form.Label>
                               <Form.Control
                                 as="textarea"
                                 className="form-control"
                                 rows={3}
-                                placeholder="Message"
+                                placeholder="Mensaje"
                                 name="description"
                                 required
                                 value={values.description}
@@ -411,7 +411,7 @@ const VandorSettingEdit = () => {
                             className="gi-register-wrap gi-register-btn"
                           >
                             <button className="gi-btn-1" type="submit">
-                              Save
+                              Guardar
                             </button>
                           </span>
                         </Form>
