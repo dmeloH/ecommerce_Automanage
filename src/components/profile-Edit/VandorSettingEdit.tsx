@@ -308,12 +308,12 @@ const VandorSettingEdit = () => {
                                   className="gi-register-select"
                                 >
                                   <option value="">Seleccionar banco</option>
-                                  <option value="Bank of India">
+                                  <option value="Bancos de colombia">
                                     Bancos de colombia
                                   </option>
-                                  <option value="IDBI">Bancolombia</option>
-                                  <option value="ICIC">Banco de Bogotá</option>
-                                  <option value="Kotak">Davivienda</option>
+                                  <option value="Bancolombia">Bancolombia</option>
+                                  <option value="Banco de Bogotá">Banco de Bogotá</option>
+                                  <option value="Davivienda">Davivienda</option>
                                 </Form.Select>
                               </span>
                               {errors.bankName &&
