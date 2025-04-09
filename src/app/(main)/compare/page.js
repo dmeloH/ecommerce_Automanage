@@ -9,7 +9,7 @@ const page = () => {
         <>
 
 
-            <Breadcrumb title={"Compare"} />
+            <Breadcrumb title={"Comparar"} />
             <Compare />
 
         </>

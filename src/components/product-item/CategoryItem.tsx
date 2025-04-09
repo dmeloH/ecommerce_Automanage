@@ -10,7 +10,7 @@ const CategoryItem = ({ data }) => {
         <Link href="/shop-left-sidebar-col-3">
           <h4 className="gi-cat-title">{data.name}</h4>
         </Link>
-        <p className="items">{data.item} Items</p>
+        <p className="items">{data.item} Artículos</p>
       </div>
     </div>
   );

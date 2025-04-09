@@ -30,11 +30,10 @@ const Service = () => {
           {/* Título y descripción de la sección */}
           <div className="section-title-2">
             <h2 className="gi-title">
-              Our <span>Services</span>
+              Otros <span>Servicios</span>
             </h2>
             <p>
-              Customer service should not be a department. It should be the
-              entire company.
+            ¿Sabes cuál es el secreto? Que en esta empresa, ‘servicio’ no es una palabra… es la sonrisa que entregamos con lo que hacemos.
             </p>
           </div>
           

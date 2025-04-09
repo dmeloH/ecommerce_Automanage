@@ -10,30 +10,21 @@ interface Testimonials {
 const testimonials: Testimonials[] = [
   {
     image: process.env.NEXT_PUBLIC_URL + "/assets/img/user/1.jpg",
-    name: "Mariya Klinton",
+    name: "Esteban Ricardo",
     subimage: process.env.NEXT_PUBLIC_URL + "/assets/img/icons/top-quotes.svg",
     subimagetwo: process.env.NEXT_PUBLIC_URL + "/assets/img/icons/bottom-quotes.svg",
-    category: "CEO",
+    category: "Desarrollador",
     description:
-      "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy typesetting industry.",
+      "Apasionado por la tecnología y la resolución de problemas mediante código. Con experiencia en el diseño, desarrollo e implementación de soluciones software robustas y escalables. Dominio de lenguajes como JavaScript, Java y frameworks como React. Comprometido con las mejores prácticas de clean code, testing (unitario/integración) y arquitecturas limpias (MVC, microservicios)..",
   },
   {
     image: process.env.NEXT_PUBLIC_URL + "/assets/img/user/2.jpg",
     subimage: process.env.NEXT_PUBLIC_URL + "/assets/img/icons/top-quotes.svg",
     subimagetwo: process.env.NEXT_PUBLIC_URL + "/assets/img/icons/bottom-quotes.svg",
-    name: "John Doe",
-    category: "General Manager",
+    name: "Daniela Melo",
+    category: "Desarrolladora",
     description:
-      "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy typesetting industry.",
-  },
-  {
-    image: process.env.NEXT_PUBLIC_URL + "/assets/img/user/3.jpg",
-    subimage: process.env.NEXT_PUBLIC_URL + "/assets/img/icons/top-quotes.svg",
-    subimagetwo: process.env.NEXT_PUBLIC_URL + "/assets/img/icons/bottom-quotes.svg",
-    name: "Nency Lykra",
-    category: "Marketing Manager",
-    description:
-      "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy typesetting industry.",
-  },
+      "Apasionada por la tecnología y la resolución de problemas mediante código. Con experiencia en el diseño, desarrollo e implementación de soluciones software robustas y escalables. Dominio de lenguajes como JavaScript, Java y frameworks como React, Node.js. Comprometida con las mejores prácticas de clean code, testing (unitario/integración) y arquitecturas limpias (MVC, microservicios)..",
+  }
 ];
 export default testimonials;

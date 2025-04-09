@@ -1,56 +1,25 @@
-/**
- * Team Component
- * -----------------------------
- * Este componente muestra una sección con los miembros del equipo en un carrusel interactivo.
- * Utiliza React con Swiper para la animación del carrusel y SWR para obtener datos desde una API.
- * 
- * Características principales:
- * - Obtiene datos de la API '/api/team' usando SWR.
- * - Usa Swiper.js para mostrar un carrusel de miembros del equipo con desplazamiento automático.
- * - Muestra un spinner mientras se cargan los datos.
- * - Soporta paginación opcional.
- * - Permite manejar eventos personalizados en caso de éxito o error.
- * - Muestra información de cada miembro del equipo, incluyendo imagen, nombre, cargo y enlaces a redes sociales.
- * - Adapta la cantidad de diapositivas mostradas según el tamaño de la pantalla.
- * 
- * Dependencias necesarias:
- * - React
- * - Swiper (para el carrusel)
- * - SWR (para la obtención de datos)
- * - Bootstrap (para estilos y diseño responsivo)
- * 
- * Props del componente:
- * - `onSuccess`: Función opcional que se ejecuta si la carga de datos es exitosa.
- * - `hasPaginate`: Booleano que indica si se debe manejar paginación en los datos obtenidos.
- * - `onError`: Función opcional que se ejecuta si ocurre un error al cargar los datos.
- * 
- * Uso:
- * ```jsx
- * <Team onSuccess={callback} hasPaginate={true} onError={callback} />
- * ```
- */
-
 "use client";
 import React from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
-import { Autoplay } from "swiper/modules";
+import { Autoplay, EffectCreative } from "swiper/modules";
 import "swiper/css";
+import "swiper/css/effect-creative";
+import { Col, Row } from "react-bootstrap";
 import useSWR from "swr";
 import fetcher from "../fetcher-api/Fetcher";
 import Spinner from "../button/Spinner";
 
-const Team = ({
+const Testimonials = ({
   onSuccess = () => {},
   hasPaginate = false,
   onError = () => {},
 }) => {
-  // Obtención de datos con SWR
-  const { data, error } = useSWR("/api/team", fetcher, { onSuccess, onError });
+  const { data, error } = useSWR("/api/testimonials", fetcher, {
+    onSuccess,
+    onError,
+  });
 
-  // Manejo de errores en la obtención de datos
-  if (error) return <div>Error al cargar los miembros del equipo.</div>;
-  
-  // Muestra el spinner mientras se cargan los datos
+  if (error) return <div>Failed to load products</div>;
   if (!data)
     return (
       <div>
@@ -58,7 +27,6 @@ const Team = ({
       </div>
     );
 
-  // Función para manejar la paginación
   const getData = () => {
     if (hasPaginate) return data.data;
     else return data;
@@ -66,70 +34,103 @@ const Team = ({
 
   return (
     <>
-      {/* Sección principal con estilos personalizados */}
-      <section className="gi-team-section padding-tb-40">
+      <section className="gi-testimonials-section padding-tb-40">
         <div className="container">
-          {/* Título y descripción de la sección */}
-          <div className="section-title-2">
-            <h2 className="gi-title">
-            No solo sabemos de piezas: <span>sabemos lo que valoras.</span>
-            </h2>
-            <p>Detrás de cada repuesto hay personas comprometidas. Este es el equipo que hace posible tu tranquilidad al volante. 😄</p>
-          </div>
-          
-          {/* Carrusel de miembros del equipo */}
-          <Swiper
-            loop={true}
-            navigation={false}
-            modules={[Autoplay]}
-            autoplay={{ delay: 2000 }}
-            spaceBetween={30}
-            slidesPerView={5}
-            breakpoints={{
-              320: { slidesPerView: 1 },
-              425: { slidesPerView: 2 },
-              640: { slidesPerView: 3 },
-              768: { slidesPerView: 3 },
-              1024: { slidesPerView: 4 },
-              1025: { slidesPerView: 5 },
-            }}
-            className="gi-team owl-carousel"
-          >
-            {getData().map((item, index) => (
-              <SwiperSlide key={index} className="gi-team-box">
-                <div className="gi-team-imag">
-                  <img src={item.image} alt={item.name} />
-                  <div className="gi-team-socials">
-                    <ul className="align-itegi-center">
-                      <li className="gi-social-link">
-                        <a href={item.twitter || "#"}>
-                          <i className="gicon gi-twitter" aria-hidden="true"></i>
-                        </a>
-                      </li>
-                      <li className="gi-social-link">
-                        <a href={item.facebook || "#"}>
-                          <i className="gicon gi-facebook" aria-hidden="true"></i>
-                        </a>
-                      </li>
-                      <li className="gi-social-link">
-                        <a href={item.linkedin || "#"}>
-                          <i className="gicon gi-linkedin" aria-hidden="true"></i>
-                        </a>
-                      </li>
-                    </ul>
-                  </div>
+          <Row>
+            <Col md={12}>
+              <div className="testim-bg p-tb-80">
+                <div className="section-title d-none">
+                  <h2>
+                    Customers <span>Review</span>
+                  </h2>
                 </div>
-                <div className="gi-team-info">
-                  <h5>{item.name}</h5>
-                  <p>{item.title}</p>
+                <span className="gi-testi-shape-1"></span>
+                <div className="gi-test-outer gi-test-section">
+                  <Swiper
+                    loop={true}
+                    modules={[Autoplay, EffectCreative]}
+                    creativeEffect={{
+                      prev: {
+                        shadow: true,
+                        translate: [0, 0, -400],
+                      },
+                      next: {
+                        translate: ["100%", 0, 0],
+                      },
+                    }}
+                    autoplay={{ delay: 5000 }}
+                    slidesPerView={1}
+                    breakpoints={{
+                      640: {
+                        slidesPerView: 1,
+                      },
+                      768: {
+                        slidesPerView: 1,
+                      },
+                      1024: {
+                        slidesPerView: 1,
+                      },
+                    }}
+                    onSlideChangeTransitionStart={(swiper) => {
+                      const slides = swiper.slides;
+                      slides.forEach((slide, index) => {
+                        slide.style.opacity =
+                          index === swiper.activeIndex ? "1" : "0";
+                      });
+                    }}
+                    id="gi-testimonial-slider"
+                    className="swiper-container"
+                  >
+                    {getData().map((item, index) => (
+                      <SwiperSlide key={index} className="gi-test-item">
+                        <img
+                          src={item.subimage}
+                          className="svg_img test_svg top"
+                          alt="user"
+                        />
+                        <div className="gi-test-inner">
+                          <div className="gi-test-img">
+                            <img
+                              alt="testimonial"
+                              title="testimonial"
+                              src={item.image}
+                              width={100}
+                            />
+                          </div>
+                          <div className="gi-test-content">
+                            <div className="gi-test-desc">
+                              {item.description}
+                            </div>
+                            <div className="gi-test-name ">{item.name}</div>
+                            <div className="gi-test-designation">
+                              {item.category}
+                            </div>
+                            <div className="gi-test-rating">
+                              <i className="gicon gi-star fill"></i>
+                              <i className="gicon gi-star fill"></i>
+                              <i className="gicon gi-star fill"></i>
+                              <i className="gicon gi-star fill"></i>
+                              <i className="gicon gi-star fill"></i>
+                            </div>
+                          </div>
+                        </div>
+                        <img
+                          src={item.subimagetwo}
+                          className="svg_img test_svg bottom"
+                          alt=""
+                        />
+                      </SwiperSlide>
+                    ))}
+                  </Swiper>
                 </div>
-              </SwiperSlide>
-            ))}
-          </Swiper>
+                <span className="gi-testi-shape-2"></span>
+              </div>
+            </Col>
+          </Row>
         </div>
       </section>
     </>
   );
 };
 
-export default Team;
+export default Testimonials;

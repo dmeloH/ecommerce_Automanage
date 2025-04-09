@@ -25,7 +25,7 @@ const pages: Page[] = [
     href: "/orders",
   },
   {
-    name: "Compare",
+    name: "Comparar",
     href: "/compare",
   },
   {

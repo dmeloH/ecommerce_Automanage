@@ -126,10 +126,10 @@ const NewsletterModal = () => {
                   textTransform: "capitalize",
                 }}
               >
-                Novedades
+                Novedades‼️
               </h2>
               <p style={{ color: "#777" }}>
-              Únete a Automanage y mantente al tanto de las noticias más recientes y nuestras ofertas exclusivas.
+              Únete a Automanage y mantente al tanto de las noticias más recientes y nuestras ofertas exclusivas. 🤯
               </p>
 
               <Formik

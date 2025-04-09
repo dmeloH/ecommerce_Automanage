@@ -43,7 +43,7 @@ const Compare = () => {
   if (CompareItem.length === 0) {
     return (
       <div style={{ textAlign: "center" }} className="gi-compare-col">
-        <h5>Compare items are empty.</h5>
+        <h5>No hay elementos en la comparación.</h5>
       </div>
     );
   }
@@ -51,7 +51,7 @@ const Compare = () => {
   return (
     <>
       <section className="gi-compare padding-tb-40">
-        <h2 className="d-none">Compare</h2>
+        <h2 className="d-none">Comparar</h2>
         <div className="container">
           <div className="row">
             <div className="col-md-12">
@@ -59,39 +59,39 @@ const Compare = () => {
                 <div className="gi-compare-col title-col">
                   <div className="gi-compare-cell">
                     <div className="title">
-                      <h5>Product Image</h5>
+                      <h5>Imagen del producto</h5>
                     </div>
                   </div>
                   <div className="gi-compare-cell">
-                    <h5>Name</h5>
+                    <h5>Nombre</h5>
                   </div>
                   <div className="gi-compare-cell">
-                    <h5>Category</h5>
+                    <h5>Categoría</h5>
                   </div>
                   <div className="gi-compare-cell">
-                    <h5>Ratings</h5>
+                    <h5>Calificaciones</h5>
                   </div>
                   <div className="gi-compare-cell">
-                    <h5>Availability</h5>
+                    <h5>Disponibilidad</h5>
                   </div>
                   <div className="gi-compare-cell">
-                    <h5>location</h5>
+                    <h5>Ubicación</h5>
                   </div>
                   <div className="gi-compare-cell">
-                    <h5>Brand</h5>
+                    <h5>Marca</h5>
                   </div>
                   <div className="gi-compare-cell">
                     <h5>SKU</h5>
                   </div>
                   <div className="gi-compare-cell">
-                    <h5>Quantity</h5>
+                    <h5>Cantidad</h5>
                   </div>
                   <div className="gi-compare-cell">
-                    <h5>Weight</h5>
+                    <h5>Peso</h5>
                   </div>
                   <div className="gi-compare-cell">
                     <div className="desc">
-                      <h5>Description</h5>
+                      <h5>Descripción</h5>
                     </div>
                   </div>
                 </div>
@@ -107,26 +107,26 @@ const Compare = () => {
                           "/assets/img/icons/close.svg"
                         }
                         className="svg_img"
-                        alt="close"
+                        alt="cerrar"
                       />
                     </a>
                     <div className="gi-compare-cell">
                       <div className="list">
-                        <img src={data.image} alt="product" />
+                        <img src={data.image} alt="producto" />
                         <div className="gi-action">
                           <ul>
                             <li>
                               <a
                                 className="gi-btn-group wishlist"
                                 onClick={() => handleWishlist(data)}
-                                title="Wishlist"
+                                title="Lista de deseos"
                               >
                                 <i className="fi-rr-heart"></i>
                               </a>
                             </li>
                             <li>
                               <a
-                                title="Add To Cart"
+                                title="Agregar al carrito"
                                 onClick={() => handleCart(data)}
                                 className="gi-btn-group add-to-cart"
                               >
@@ -147,7 +147,7 @@ const Compare = () => {
                       <span className="gi-pro-rating">
                         <StarRating rating={data.rating} />
                       </span>
-                      <p className="rating-info">(654 Review)</p>
+                      <p className="rating-info">(654 Reseñas)</p>
                     </div>
                     <div className="gi-compare-cell">
                       <p
@@ -155,7 +155,7 @@ const Compare = () => {
                           data.status === "Available" ? "i-stock" : "o-stock"
                         }
                       >
-                        {data.status}
+                        {data.status === "Available" ? "Disponible" : "Agotado"}
                       </p>
                     </div>
                     <div className="gi-compare-cell">
@@ -168,7 +168,7 @@ const Compare = () => {
                       <p>{data.sku}</p>
                     </div>
                     <div className="gi-compare-cell">
-                      <p>1 Pack</p>
+                      <p>1 Paquete</p>
                     </div>
                     <div className="gi-compare-cell">
                       <p>{data.waight}</p>
@@ -176,8 +176,8 @@ const Compare = () => {
                     <div className="gi-compare-cell">
                       <div className="desc">
                         <p>
-                          Recently with desktop publishing software like Aldus
-                          PageMaker including versions of Lorem Ipsum.
+                          Recientemente con software de autoedición como Aldus
+                          PageMaker, incluyendo versiones de Lorem Ipsum.
                         </p>
                       </div>
                     </div>

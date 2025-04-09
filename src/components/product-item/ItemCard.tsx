@@ -54,7 +54,7 @@ const ItemCard = ({ data }: any) => {
 
     if (!isItemInCart) {
       dispatch(addItem({ ...data, quantity: 1 }));
-      showSuccessToast("Add product in Cart Successfully!");
+      showSuccessToast("¡Añadiste el producto al carrito exitosamente!");
     } else {
       const updatedCartItems = cartItems.map((item: Item) =>
         item.id === data.id
@@ -66,7 +66,7 @@ const ItemCard = ({ data }: any) => {
           : item
       );
       dispatch(updateItemQuantity(updatedCartItems));
-      showSuccessToast("Add product in Cart Successfully!");
+      showSuccessToast("¡Añadiste el producto al carrito exitosamente!");
     }
   };
 
@@ -77,12 +77,12 @@ const ItemCard = ({ data }: any) => {
   const handleWishlist = (data: Item) => {
     if (!isInWishlist(data)) {
       dispatch(addWishlist(data));
-      showSuccessToast("Add product in Wishlist Successfully!", {
+      showSuccessToast("Añadiste el producto a la lista de deseos correctamente!", {
         icon: false,
       });
     } else {
       dispatch(removeWishlist(data.id));
-      showSuccessToast("Remove product on Wishlist Successfully!", {
+      showSuccessToast("¡Eliminaste el producto de la lista de deseos exitosamente!", {
         icon: false,
       });
       // showErrorToast("Item already have to wishlist");
@@ -96,12 +96,12 @@ const ItemCard = ({ data }: any) => {
   const handleCompareItem = (data: Item) => {
     if (!isInCompare(data)) {
       dispatch(addCompare(data));
-      showSuccessToast(`Add product in Compare list Successfully!`, {
+      showSuccessToast(`¡Añadiste el producto a la lista de comparación exitosamente!`, {
         icon: false,
       });
     } else {
       dispatch(removeCompareItem(data.id));
-      showSuccessToast("Remove product on Compare list Successfully!", {
+      showSuccessToast("Eliminaste el producto de la lista de comparación ¡Exitosamente!", {
         icon: false,
       });
       // showErrorToast("Item already have to compare list");
@@ -232,8 +232,8 @@ const ItemCard = ({ data }: any) => {
                 <span className="qty">{data.weight}</span>
               </span>
               <span className="gi-price">
-                <span className="new-price">${data.newPrice}.00</span>
-                <span className="old-price">${data.oldPrice}.00</span>
+                <span className="new-price">${data.newPrice}.000</span>
+                <span className="old-price">${data.oldPrice}.000</span>
               </span>
             </div>
           </div>

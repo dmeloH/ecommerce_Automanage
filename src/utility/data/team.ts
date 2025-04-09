@@ -6,34 +6,39 @@ interface Team {
 
 const team: Team[] = [
   {
-    image: process.env.NEXT_PUBLIC_URL + "/assets/img/user/1.jpg",
-    name: "Esteban Ricardo",
-    title: "Programador",
-  },
-  {
-    image: process.env.NEXT_PUBLIC_URL + "/assets/img/user/2.jpg",
-    name: "William Dalin",
-    title: "Co-Founder",
-  },
-  {
     image: process.env.NEXT_PUBLIC_URL + "/assets/img/user/3.jpg",
-    name: "Emma Welson",
-    title: "Manager",
+    name: "Angular",
+    title: "Freamwork de front",
   },
   {
     image: process.env.NEXT_PUBLIC_URL + "/assets/img/user/4.jpg",
-    name: "Benjamin Martin",
-    title: "Leader",
+    name: "Java",
+    title: "Lenguaje de programación",
   },
   {
     image: process.env.NEXT_PUBLIC_URL + "/assets/img/user/5.jpg",
-    name: "Amelia Martin",
-    title: "Leader",
+    name: "NextJs",
+    title: "Freamwork de back",
   },
   {
-    image: process.env.NEXT_PUBLIC_URL + "/assets/img/user/3.jpg",
-    name: "Emma Welson",
-    title: "Manager",
+    image: process.env.NEXT_PUBLIC_URL + "/assets/img/user/6.jpg",
+    name: "NodeJs",
+    title: "Entorno de ejecición de javaScript",
+  },
+  {
+    image: process.env.NEXT_PUBLIC_URL + "/assets/img/user/7.jpg",
+    name: "Railway",
+    title: "Plataforma de despliegue",
+  },
+  {
+    image: process.env.NEXT_PUBLIC_URL + "/assets/img/user/8.jpg",
+    name: "React",
+    title: "Freamwork de front",
+  },
+  {
+    image: process.env.NEXT_PUBLIC_URL + "/assets/img/user/9.jpg",
+    name: "Vercel",
+    title: "Plataforma de despliegue",
   },
 ];
 export default team;

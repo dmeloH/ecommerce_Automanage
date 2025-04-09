@@ -43,11 +43,11 @@ const SidebarCategory = ({
     {
       groupname: "clothes",
       categories: [
-        "Baby Wear",
-        "Winter Wear",
-        "men's wear",
-        "women's wear",
-        "unisex",
+        "Frenos y Embrague",
+        "Motor y Accesorios",
+        "Electricidad del Auto",
+        "Dirección y Suspensión",
+        "Partes Exteriores"
       ],
     },
     {
