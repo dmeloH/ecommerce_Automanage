@@ -415,7 +415,7 @@ const CheckOut = ({
       dispatch(login(foundUser));
       showSuccessToast("User Login Success");
     } else {
-      showErrorToast("Invalid email or password");
+      showErrorToast("Correo electrónico o contraseña no válidos");
     }
 
     const requiredFields = ["email", "password"];

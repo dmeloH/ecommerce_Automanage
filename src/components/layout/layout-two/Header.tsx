@@ -433,7 +433,7 @@ const Header = ({
                                   <li className="non-drop">
                                     <Link href="/shop-left-sidebar-col-3">
                                       <i className="fi-rr-badge-percent"></i>
-                                      Offers
+                                      Ofertas
                                     </Link>
                                   </li>
                                 </ul>

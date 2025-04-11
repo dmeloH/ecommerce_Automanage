@@ -65,7 +65,7 @@ const LoginPage = () => {
       dispatch(login(foundUser));
       showSuccessToast("User Login Success");
     } else {
-      showErrorToast("Invalid email or password");
+      showErrorToast("Correo electrónico o contraseña no válidos");
     }
 
     setValidated(true);
@@ -73,7 +73,7 @@ const LoginPage = () => {
 
   return (
     <>
-      <Breadcrumb title={"Login Page"} />
+      <Breadcrumb title={"Inicio de sesión"} />
       <section className="gi-login padding-tb-40">
         <Container>
           <div className="section-title-2">

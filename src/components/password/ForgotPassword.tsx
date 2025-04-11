@@ -16,8 +16,8 @@ const ForgotPassword = () => {
   const schema = yup.object().shape({
     email: yup
       .string()
-      .email("Invalid email address")
-      .required("Email is required"),
+      .email("Dirección de correo electrónico no válida")
+      .required("Se requiere correo electrónico"),
   });
   const initialValues = {
     email: "",
@@ -78,7 +78,7 @@ const ForgotPassword = () => {
                                   name="email"
                                   value={values.email}
                                   onChange={handleChange}
-                                  placeholder="Enter your email..."
+                                  placeholder="Ingresa tu Email..."
                                   required
                                   isInvalid={!!errors.email}
                                 />

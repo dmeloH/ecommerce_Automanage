@@ -11,7 +11,7 @@ export default async function Page({
   return (
     <>
       {/* {params.id} */}
-      <Breadcrumb title={"My Orders Details"} />
+      <Breadcrumb title={"Detalles de mis pedidos"} />
       <section className="gi-blog padding-tb-40">
         <div className="container">
           <Row>

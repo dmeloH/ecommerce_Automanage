@@ -3,7 +3,10 @@
 import { useState, useEffect } from "react";
 import { loadStripe } from "@stripe/stripe-js";
 import { Elements, CardElement, useStripe, useElements } from "@stripe/react-stripe-js";
+import Swal from 'sweetalert2'
+import withReactContent from 'sweetalert2-react-content'
 
+const MySwal = withReactContent(Swal)
 // Carga la clave pública de Stripe
 const stripePromise = loadStripe(process.env.NEXT_PUBLIC_STRIPE_PUBLISHABLE_KEY);
 
@@ -36,7 +39,13 @@ const CheckoutForm = () => {
         if (result.error) {
             console.error(result.error.message);
         } else if (result.paymentIntent.status === "succeeded") {
-            alert("Pago exitoso");
+            MySwal.fire({
+                position: "top-end",
+                icon: "success",
+                title: "Your work has been saved",
+                showConfirmButton: false,
+                timer: 1500
+            });
         }
     };
 

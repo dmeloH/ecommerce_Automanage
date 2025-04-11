@@ -10,19 +10,19 @@ const DiscountCoupon = ({ onDiscountApplied }) => {
 
   const handleApplyDiscount = () => {
     if (couponCode === "") {
-      setErrorMessage("Coupon code cannot be empty");
+      setErrorMessage("El código de cupón no puede estar vacío");
       setDiscount(0);
-    } else if (couponCode === "SAVE10") {
+    } else if (couponCode === "101824") {
       setDiscount(10); // 10% discount
       setErrorMessage("");
       setIsBtnVisible(false);
-    } else if (couponCode === "SAVE20") {
+    } else if (couponCode === "201458") {
       setDiscount(20); // 10% discount
       setErrorMessage("");
       setIsBtnVisible(false);
     } else {
       setDiscount(0); // No discount
-      setErrorMessage("Discount Coupon can not exceed");
+      setErrorMessage("El cupón de descuento no puede exceder");
     }
   };
 

@@ -133,7 +133,7 @@ const ProfileEdit = () => {
                       marginTop: "10px",
                     }}
                   >
-                    {isSwitchOn ? "Switch is Vendor" : "Switch"}
+                    {isSwitchOn ? "Modo proveedor" : "Usuario"}
                   </span>
                   <span
                     style={{

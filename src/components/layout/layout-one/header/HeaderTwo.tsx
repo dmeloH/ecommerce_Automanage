@@ -80,7 +80,7 @@ function HeaderTwo({ cartItems, wishlistItems }) {
                   >
                     <input
                       className="form-control gi-search-bar"
-                      placeholder="Search Products..."
+                      placeholder="Buscar productos..."
                       type="text"
                       value={searchInput}
                       onChange={handleSearch}

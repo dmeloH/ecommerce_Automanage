@@ -42,23 +42,22 @@ const VandorSettingEdit = () => {
   const schema = yup.object().shape({
     email: yup
       .string()
-      .email("Invalid email address")
-      .required("Email is required"),
+      .email("Correo electrónico inválido")
+      .required("El correo electrónico es requerido"),
     phoneNumber: yup
       .string()
-      .matches(/^[0-9]{10}$/, "Phone number must be 10 digits")
-      .required("Phone number is required"),
-    home_address: yup.string().required("Home Address is required"),
-    office_address: yup.string().required("Office Address is required"),
-    description: yup.string().required("Description is required"),
-    taxIdName: yup.string().required("taxId is required"),
-    ssnOrEin: yup.string().required("SSN number is required"),
-    panNo: yup.string().required("panNo is required"),
-    businessType: yup.string().required("business type is required"),
-    bankName: yup.string().required("bank name is required"),
-    bankAccountNo: yup.string().required("bank account no is required"),
+      .matches(/^[0-9]{10}$/, "El número telefónico debe tener 10 dígitos")
+      .required("El número telefónico es requerido"),
+    home_address: yup.string().required("La dirección de casa es requerida"),
+    office_address: yup.string().required("La dirección de oficina es requerida"),
+    description: yup.string().required("La descripción es requerida"),
+    taxIdName: yup.string().required("El ID fiscal es requerido"),
+    ssnOrEin: yup.string().required("El número de SSN es requerido"),
+    panNo: yup.string().required("El número PAN es requerido"),
+    businessType: yup.string().required("El tipo de negocio es requerido"),
+    bankName: yup.string().required("El nombre del banco es requerido"),
+    bankAccountNo: yup.string().required("El número de cuenta bancaria es requerido"),
   });
-
   const router = useRouter();
 
   let initialValues = null;
@@ -118,7 +117,7 @@ const VandorSettingEdit = () => {
       <div className="container">
         <div className="section-title-2">
           <h2 className="gi-title">
-          Editar proveedor<span></span>
+            Editar proveedor<span></span>
           </h2>
           <p>El mejor lugar para comprar y vender productos digitales. 👩‍💻</p>
         </div>
@@ -258,9 +257,8 @@ const VandorSettingEdit = () => {
                             <Form.Group className="settings-field">
                               <Form.Label>Tipo de negocio*</Form.Label>
                               <span
-                                className={`gi-rg-select-inner form-control ${
-                                  !!errors.businessType ? "is-invalid" : ""
-                                }`}
+                                className={`gi-rg-select-inner form-control ${!!errors.businessType ? "is-invalid" : ""
+                                  }`}
                               >
                                 <Form.Control
                                   as="select"
@@ -294,9 +292,8 @@ const VandorSettingEdit = () => {
                             <Form.Group className="settings-field">
                               <Form.Label>Nombre del banco</Form.Label>
                               <span
-                                className={`gi-rg-select-inner form-control  ${
-                                  !!errors.bankName ? "is-invalid" : ""
-                                }`}
+                                className={`gi-rg-select-inner form-control  ${!!errors.bankName ? "is-invalid" : ""
+                                  }`}
                               >
                                 <Form.Select
                                   size="sm"

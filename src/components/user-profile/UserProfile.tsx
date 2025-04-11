@@ -81,7 +81,7 @@ const UserProfile = () => {
                         className=""
                         type="submit"
                       >
-                        Edit <i className="fi fi-rr-pencil"></i>
+                        Editar <i className="fi fi-rr-pencil"></i>
                       </button>
                     </span>
                     <div className="detail">

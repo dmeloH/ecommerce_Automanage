@@ -11,9 +11,9 @@ const Faq = ({}) => {
         <div className="container">
           <div className="section-title-2">
             <h2 className="gi-title">
-              frequently asked <span>questions</span>
+            Preguntas <span>frecuentes</span>
             </h2>
-            <p>Customer service management.</p>
+            <p>Gestión de atención al cliente. 👌</p>
           </div>
           <Row>
             <Col lg={6}>

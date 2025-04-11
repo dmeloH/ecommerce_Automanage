@@ -44,8 +44,8 @@ const VendorSetting = () => {
     return (
       <div className="container">
         <p>
-          Please <a href="/login">login</a> or <a href="/register">register</a>{" "}
-          to view this page.
+          Porfavor <a href="/login">Inicia sesión</a> o <a href="/register">registrate</a>{" "}
+          para ver esta pagina.
         </p>
       </div>
     );

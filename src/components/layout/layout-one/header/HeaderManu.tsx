@@ -431,7 +431,7 @@ function HeaderManu() {
                         </li>
                         <li className="non-drop">
                           <Link href="/banner-left-sidebar-col-3">
-                            <i className="fi-rr-badge-percent"></i>Offers
+                            <i className="fi-rr-badge-percent"></i>Ofertas
                           </Link>
                         </li>
                       </ul>

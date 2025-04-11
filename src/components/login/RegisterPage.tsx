@@ -29,35 +29,35 @@ interface City {
   iso2: string;
 }
 
-const RegisterPage = ({ onSuccess = () => {}, onError = () => {} }) => {
+const RegisterPage = ({ onSuccess = () => { }, onError = () => { } }) => {
   const { Formik } = formik;
   const formikRef = useRef<any>(null);
 
   // Define Yup validation schema
   const schema = yup.object().shape({
-    firstName: yup.string().required("First name is required"),
-    lastName: yup.string().required("Last name is required"),
+    firstName: yup.string().required("El nombre es requerido"),
+    lastName: yup.string().required("El apellido es requerido"),
     email: yup
       .string()
-      .email("Invalid email address")
-      .required("Email is required"),
+      .email("Correo electrónico inválido")
+      .required("El correo electrónico es requerido"),
     phoneNumber: yup
       .string()
-      .matches(/^[0-9]{10}$/, "Phone number must be 10 digits")
-      .required("Phone number is required"),
+      .matches(/^[0-9]{10}$/, "El teléfono debe tener 10 dígitos")
+      .required("El número telefónico es requerido"),
     password: yup
       .string()
-      .min(6, "Password must be at least 6 characters")
-      .required("Password is required"),
+      .min(6, "La contraseña debe tener al menos 6 caracteres")
+      .required("La contraseña es requerida"),
     confirmPassword: yup
       .string()
-      .required("Confirm password is required")
-      .oneOf([yup.ref("password")], "Passwords must match"),
-    address: yup.string().required("Address is required"),
-    country: yup.string().required("Country is required"),
-    state: yup.string().required("State is required"),
-    city: yup.string().required("City is required"),
-    postCode: yup.string().required("Post code is required"),
+      .required("Confirmar contraseña es requerido")
+      .oneOf([yup.ref("password")], "Las contraseñas deben coincidir"),
+    address: yup.string().required("La dirección es requerida"),
+    country: yup.string().required("El país es requerido"),
+    state: yup.string().required("El estado es requerido"),
+    city: yup.string().required("La ciudad es requerida"),
+    postCode: yup.string().required("El código postal es requerido"),
   });
 
   const initialValues = {
@@ -225,7 +225,7 @@ const RegisterPage = ({ onSuccess = () => {}, onError = () => {} }) => {
                             </Form.Group>
                           </span>
                           <span className="gi-register-wrap gi-register-half">
-                            <label>Segundo nombre*</label>
+                            <label>Apellido*</label>
                             <Form.Group>
                               <Form.Control
                                 type="text"
@@ -368,9 +368,8 @@ const RegisterPage = ({ onSuccess = () => {}, onError = () => {} }) => {
                           >
                             <label>País*</label>
                             <Form.Group
-                              className={`gi-rg-select-inner  ${
-                                !!errors.country ? "is-invalid" : ""
-                              }`}
+                              className={`gi-rg-select-inner  ${!!errors.country ? "is-invalid" : ""
+                                }`}
                             >
                               <Form.Select
                                 size="sm"
@@ -411,9 +410,8 @@ const RegisterPage = ({ onSuccess = () => {}, onError = () => {} }) => {
                           >
                             <label>Región Estado</label>
                             <Form.Group
-                              className={`gi-rg-select-inner  ${
-                                !!errors.state ? "is-invalid" : ""
-                              }`}
+                              className={`gi-rg-select-inner  ${!!errors.state ? "is-invalid" : ""
+                                }`}
                             >
                               <Form.Select
                                 size="sm"
@@ -429,7 +427,7 @@ const RegisterPage = ({ onSuccess = () => {}, onError = () => {} }) => {
                                 isInvalid={!!errors.state}
                               >
                                 <option value="" disabled>
-                                Región/Estado
+                                  Región/Estado
                                 </option>
                                 {loadingStates ? (
                                   <option disabled>Cargando...</option>
@@ -459,9 +457,8 @@ const RegisterPage = ({ onSuccess = () => {}, onError = () => {} }) => {
                           >
                             <label>Ciudad *</label>
                             <Form.Group
-                              className={`gi-rg-select-inner  ${
-                                !!errors.city ? "is-invalid" : ""
-                              }`}
+                              className={`gi-rg-select-inner  ${!!errors.city ? "is-invalid" : ""
+                                }`}
                             >
                               <Form.Select
                                 size="sm"
@@ -537,11 +534,11 @@ const RegisterPage = ({ onSuccess = () => {}, onError = () => {} }) => {
                             className="gi-register-wrap gi-register-btn"
                           >
                             <span>
-                            ¿Ya tienes una cuenta?
+                              ¿Ya tienes una cuenta?
                               <a href="/login">Iniciar sesión</a>
                             </span>
                             <button className="gi-btn-1" type="submit">
-                            Registro
+                              Registro
                             </button>
                           </span>
                         </Form>

@@ -8,7 +8,7 @@ const page = () => {
         <>
 
 
-            <Breadcrumb title={"Forgot Password"} />
+            <Breadcrumb title={"Has olvidado tu contraseña"} />
             <ForgotPassword />
 
         </>

@@ -90,39 +90,39 @@ const ProductOrderDetails = ({ id }) => {
                   <div className="gi-single-list">
                     <ul>
                       <li>
-                        <strong className="gi-check-subtitle">Name :</strong>{" "}
+                        <strong className="gi-check-subtitle">Nombre :</strong>{" "}
                         <span style={{ color: "#777" }}>
                           {order?.address.firstName} {order?.address.lastName}{" "}
                         </span>
                       </li>
                       <li>
-                        <strong className="gi-check-subtitle">Address :</strong>{" "}
+                        <strong className="gi-check-subtitle">Dirección :</strong>{" "}
                         <span style={{ color: "#777" }}>
                           {order?.address.address}
                         </span>
                       </li>
                       <li>
                         <strong className="gi-check-subtitle">
-                          PostalCode :
+                          Código postal:
                         </strong>{" "}
                         <span style={{ color: "#777" }}>
                           {order?.address.postalCode}
                         </span>
                       </li>
                       <li>
-                        <strong className="gi-check-subtitle">Country :</strong>{" "}
+                        <strong className="gi-check-subtitle">País :</strong>{" "}
                         <span style={{ color: "#777" }}>
                           {order?.address.countryName}
                         </span>
                       </li>
                       <li>
-                        <strong className="gi-check-subtitle">State :</strong>{" "}
+                        <strong className="gi-check-subtitle">Estado :</strong>{" "}
                         <span style={{ color: "#777" }}>
                           {order?.address.stateName}
                         </span>
                       </li>
                       <li>
-                        <strong className="gi-check-subtitle">City :</strong>{" "}
+                        <strong className="gi-check-subtitle">Ciudad :</strong>{" "}
                         <span style={{ color: "#777" }}>
                           {order?.address.city}
                         </span>
@@ -130,7 +130,7 @@ const ProductOrderDetails = ({ id }) => {
                     </ul>
                   </div>
                 ) : (
-                  <span className="gi-check-subtitle">Address is empty...</span>
+                  <span className="gi-check-subtitle">La dirección está vacía...</span>
                 )}
               </div>
             </Col>
@@ -155,7 +155,7 @@ const ProductOrderDetails = ({ id }) => {
                       className="fi fi-rs-arrow-left"
                     ></i>
                   </button>
-                  <h5>Order Items</h5>
+                  <h5>Orden artículos</h5>
                   <span
                     style={{ float: "inline-end" }}
                     className="gi-register-wrap"
@@ -167,10 +167,10 @@ const ProductOrderDetails = ({ id }) => {
                       <thead>
                         <tr>
                           <th scope="col">ID</th>
-                          <th scope="col">Image</th>
-                          <th scope="col">Name</th>
-                          <th scope="col">Date</th>
-                          <th scope="col">Price</th>
+                          <th scope="col">Imagen</th>
+                          <th scope="col">Nombre</th>
+                          <th scope="col">Fecha</th>
+                          <th scope="col">Precio</th>
                         </tr>
                       </thead>
                       <tbody
@@ -210,7 +210,7 @@ const ProductOrderDetails = ({ id }) => {
                           <tr>
                             <td colSpan={12}>
                               <span style={{ color: "#777" }}>
-                                Order list empty...
+                              Lista de pedidos vacía...
                               </span>
                             </td>
                           </tr>

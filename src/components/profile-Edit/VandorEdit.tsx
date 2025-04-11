@@ -116,9 +116,9 @@ const VandorEdit = () => {
         <div className="container">
           <div className="section-title-2">
             <h2 className="gi-title">
-              Edit Profile<span></span>
+            Editar perfil<span></span>
             </h2>
-            <p>Best place to buy and sell digital products.</p>
+            <p>El mejor lugar para comprar y vender productos digitales.</p>
           </div>
           <div className="row">
             <div className="gi-register-wrapper">
@@ -131,7 +131,7 @@ const VandorEdit = () => {
                       marginTop: "10px",
                     }}
                   >
-                    {isSwitchOn ? "Switch is Vendor" : "Switch is OFF"}
+                    {isSwitchOn ? "Modo proveedor" : "Switch is OFF"}
                   </span>
 
                   <span
@@ -157,34 +157,34 @@ const VandorEdit = () => {
                     onSubmit={handleSubmit}
                   >
                     <span className="gi-register-wrap gi-register-half">
-                      <label>First Name*</label>
+                      <label>Nombre*</label>
                       <Form.Group>
                         <Form.Control
                           type="text"
                           name="firstName"
-                          placeholder="Enter your first name"
+                          placeholder="Ingrese su nombre"
                           value={formData.firstName}
                           onChange={handleInputChange}
                           required
                         />
                          <Form.Control.Feedback type="invalid">
-                          Please Enter First Name.
+                          Porfavor ingrese su nombre.
                         </Form.Control.Feedback>
                       </Form.Group>
                     </span>
                     <span className="gi-register-wrap gi-register-half">
-                      <label>Last Name*</label>
+                      <label>Apellido*</label>
                       <Form.Group>
                         <Form.Control
                           type="text"
                           name="lastName"
-                          placeholder="Enter your last name"
+                          placeholder="Ingrese su apellido"
                           required
                           value={formData.lastName}
                           onChange={handleInputChange}
                         />
                          <Form.Control.Feedback type="invalid">
-                          Please Enter Last Name.
+                         Porfavor ingrese su apellido.
                         </Form.Control.Feedback>
                       </Form.Group>
                      
@@ -198,13 +198,13 @@ const VandorEdit = () => {
                         <Form.Control
                           type="email"
                           name="email"
-                          placeholder="Enter your email add..."
+                          placeholder="Ingrese su Email..."
                           required
                           value={formData.email}
                           onChange={handleInputChange}
                         />
                         <Form.Control.Feedback type="invalid">
-                          Please Enter correct username.
+                        Por favor ingrese el nombre de usuario correcto.
                         </Form.Control.Feedback>
                       </Form.Group>
                     </span>
@@ -217,14 +217,14 @@ const VandorEdit = () => {
                         <Form.Control
                           type="text"
                           name="phoneNumber"
-                          placeholder="Enter your phone number"
+                          placeholder="Ingre sse numero de celular"
                           pattern="^\d{10,12}$"
                           required
                           value={formData.phoneNumber}
                           onChange={handleInputChange}
                         />
                         <Form.Control.Feedback type="invalid">
-                          Please Enter 10-12 digit number.
+                        Ingrese un número de 10-12 dígitos.
                         </Form.Control.Feedback>
                       </Form.Group>
                     </span>
@@ -232,7 +232,7 @@ const VandorEdit = () => {
                       style={{ marginTop: "10px" }}
                       className="gi-register-wrap"
                     >
-                      <label>Address</label>
+                      <label>Dirección</label>
                       <Form.Group>
                         <Form.Control
                           type="text"
@@ -243,7 +243,7 @@ const VandorEdit = () => {
                           required
                         />
                          <Form.Control.Feedback type="invalid">
-                          Please Enter Address.
+                         Por favor ingrese se Dirección.
                         </Form.Control.Feedback>
                       </Form.Group>
                     </span>
@@ -253,7 +253,7 @@ const VandorEdit = () => {
                     >
                       <div className="gi-leave-form">
                         <Form.Group>
-                          <label>About Me</label>
+                          <label>Sobre ti</label>
                           <Form.Control
                             as="textarea"
                             rows={3}
@@ -264,7 +264,7 @@ const VandorEdit = () => {
                             onChange={handleInputChange}
                           />
                           <Form.Control.Feedback type="invalid">
-                          This field is required
+                          Este campo es obligatorio
                           </Form.Control.Feedback>
                         </Form.Group>
                       </div>
@@ -274,7 +274,7 @@ const VandorEdit = () => {
                       style={{ paddingTop: "10px", marginTop: "10px" }}
                       className="gi-register-wrap"
                     >
-                      <label>Profile Photo</label>
+                      <label>Foto de perfil</label>
                       <input
                         style={{ paddingTop: "10px" }}
                         type="file"
@@ -295,7 +295,7 @@ const VandorEdit = () => {
                       className="gi-register-wrap gi-register-btn"
                     >
                       <button className="gi-btn-1" type="submit">
-                        Save
+                        guardar
                       </button>
                     </span>
                   </Form>

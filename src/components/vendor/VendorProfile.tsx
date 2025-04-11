@@ -77,7 +77,7 @@ const VendorProfile = () => {
                         className=""
                         type="submit"
                       >
-                        Edit <i className="fi fi-rr-pencil"></i>
+                        Editar <i className="fi fi-rr-pencil"></i>
                       </button>
                     </span>
                     <div className="detail">
@@ -101,12 +101,12 @@ const VendorProfile = () => {
               <div className="gi-vendor-profile-card gi-vendor-profile-card">
                 <div className="gi-vendor-card-body">
                   <div className="gi-vender-about-block">
-                    <h5>Account Information</h5>
+                    <h5>Información de cuenta</h5>
                   </div>
                   <div className="row mb-minus-24px mt-m-10">
                     <div className="col-md-6 col-sm-12 mb-24">
                       <div className="gi-vendor-detail-block">
-                        <h6>E-mail address</h6>
+                        <h6>Dirección de correo electrónico</h6>
                         <ul>
                           <li>
                             <strong>Email : </strong>
@@ -117,10 +117,10 @@ const VendorProfile = () => {
                     </div>
                     <div className="col-md-6 col-sm-12 mb-24">
                       <div className="gi-vendor-detail-block">
-                        <h6>Contact nubmer</h6>
+                        <h6>Numero de contacto</h6>
                         <ul>
                           <li>
-                            <strong>Phone Nubmer : </strong>(123){" "}
+                            <strong>Número de teléfono : </strong>(+57){" "}
                             {userData.phoneNumber}
                           </li>
                         </ul>
@@ -128,21 +128,20 @@ const VendorProfile = () => {
                     </div>
                     <div className="col-md-6 col-sm-12 mb-24">
                       <div className="gi-vendor-detail-block">
-                        <h6>Address</h6>
+                        <h6>Dirección</h6>
                         <ul>
                           <li>
-                            <strong>Home : </strong> {userData.address}
+                            <strong>Hogar : </strong> {userData.address}
                           </li>
                         </ul>
                       </div>
                     </div>
                     <div className="col-md-6 col-sm-12 mb-24">
                       <div className="gi-vendor-detail-block">
-                        <h6>Shipping Address</h6>
+                        <h6>Dirección de envío</h6>
                         <ul>
                           <li>
-                            <strong>Office : </strong>123, 2150 Sycamore Street,
-                            dummy text of the, San Jose, California - 95131.
+                            <strong>Oficina : </strong>Vía la Trinidad,SERVICIO NACIONAL DE APRENDIZAJE - CIMM Ciudadela Industrial, Duitama, Boyacá
                           </li>
                         </ul>
                       </div>

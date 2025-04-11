@@ -8,7 +8,7 @@ const page = () => {
         <>
 
 
-            <Breadcrumb title={"Faq Page"} />
+            <Breadcrumb title={"Preguntas frecuentes"} />
             <Faq />
 
         </>

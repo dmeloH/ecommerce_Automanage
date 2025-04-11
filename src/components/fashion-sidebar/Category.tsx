@@ -296,7 +296,7 @@ const Category = ({
                       delay={200}
                     >
                       <div className="gi-animated-banner">
-                        <h2 className="d-none">Offers</h2>
+                        <h2 className="d-none">Ofertas</h2>
                         <div className="gi-bnr-detail ">
                           <div className="gi-bnr-info">
                             <h2>

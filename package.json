@@ -48,6 +48,8 @@
     "sass": "^1.84.0",
     "slick-carousel": "^1.8.1",
     "stripe": "^18.0.0",
+    "sweetalert2": "^11.17.2",
+    "sweetalert2-react-content": "^5.1.0",
     "swiper": "^11.2.2",
     "swiper-react": "^1.0.0",
     "swr": "^2.3.2",
